@@ -34,3 +34,10 @@ docx_output.txt
 .vscode/
 *.swp
 *.swo
+
+# Attachments (images/figures)
+**/attachments/
+
+# Generated portfolio
+LitCall_作品集.docx
+generate_portfolio.py

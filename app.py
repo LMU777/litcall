@@ -1,5 +1,5 @@
 """
-ATHENA — 学术文本深度阅读与知识管理智能体
+LitCall — 学术文本深度阅读与知识管理智能体
 Academic Text Harvesting & Empirical Note-taking Agent
 启动: streamlit run app.py
 """
@@ -24,27 +24,65 @@ import literature_agent as la
 # 页面配置 + 极简 CSS
 # ═══════════════════════════════════════════════════════════════
 st.set_page_config(
-    page_title="ATHENA · 学术智能体",
-    page_icon="🦉",
+    page_title="LitCall · 学术智能体",
+    page_icon="📖",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
 st.markdown("""
 <style>
-/* 全局 */
+/* Global */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap');
 .stApp { font-family: system-ui, -apple-system, sans-serif; }
 
-/* 侧边栏 */
+/* Sidebar */
 [data-testid="stSidebar"] {
     background: #fafafa;
     border-right: 1px solid #eee;
 }
-[data-testid="stSidebar"] .stMetric [data-testid="stMetricValue"] {
+
+/* ── Brand ── */
+.sidebar-brand { padding: 0.25rem 0 0.5rem 0; }
+.sidebar-brand .brand-name {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+}
+.sidebar-brand .brand-accent {
+    display: inline-block;
+    width: 28px;
+    height: 2.5px;
+    background: #c8956c;
+    margin: 0.4rem 0 0.55rem 0;
+    border-radius: 1px;
+}
+.sidebar-brand .brand-tagline {
+    font-size: 0.92rem;
     font-weight: 500;
+    color: #4a4a5a;
+    letter-spacing: 0.01em;
+    margin-bottom: 0.15rem;
+}
+.sidebar-brand .brand-sub {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #999;
+    letter-spacing: 0.02em;
 }
 
-/* 按钮 — 去重阴影 */
+/* Metric — compact */
+[data-testid="stSidebar"] .stMetric [data-testid="stMetricValue"] {
+    font-weight: 500; font-size: 0.95rem;
+}
+[data-testid="stSidebar"] .stMetric [data-testid="stMetricLabel"] {
+    font-size: 0.75rem; font-weight: 400; color: #888;
+}
+
+/* Buttons */
 .stButton > button {
     border-radius: 4px !important;
     border: 1px solid #ddd !important;
@@ -54,28 +92,31 @@ st.markdown("""
 }
 .stButton > button:hover { border-color: #999 !important; }
 
-/* 展开面板 */
+/* Expander */
 [data-testid="stExpander"] {
     border: none !important;
     border-bottom: 1px solid #f0f0f0 !important;
     border-radius: 0 !important;
 }
 
-/* Metric 卡片 */
+/* Metric card */
 [data-testid="stMetric"] {
     background: transparent;
     border: none;
     padding: 0.5rem;
 }
 
-/* Tabs — 简洁下划线 */
+/* Tabs */
 [data-testid="stTabs"] [aria-selected="true"] { font-weight: 500; }
 
-/* 聊天 — 轻量气泡 */
+/* Chat */
 [data-testid="stChatMessage"] {
     border-radius: 6px;
     padding: 0.75rem 1rem;
 }
+
+/* Hide default sidebar h2 */
+[data-testid="stSidebar"] h2 { display: none; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -164,16 +205,21 @@ def _console_safe(text: str) -> str:
 # 侧边栏
 # ═══════════════════════════════════════════════════════════════
 with st.sidebar:
-    st.markdown("## 🦉 ATHENA")
-    st.caption("Academic Text Harvesting & Empirical Note-taking Agent")
+    st.markdown("""
+<div class="sidebar-brand">
+    <div class="brand-name">LitCall</div>
+    <div class="brand-accent"></div>
+    <div class="brand-tagline">今天你看文献了吗？</div>
+
+</div>
+""", unsafe_allow_html=True)
 
     _idx_count, _ = _get_paper_index()  # 触发索引构建
     full_data = _load_dashboard_data()
     st.metric("知识库", f"{len(full_data)} 篇 / {len(set(p.get('期刊','') for p in full_data if p.get('期刊')))} 刊")
 
     cfg = _load_config()
-    api_ok = lambda k: "✓" if cfg.get(k) else "—"
-    st.caption(f"DeepSeek {api_ok('deepseek_api_key')}  ·  Gemini {api_ok('gemini_api_key')}  ·  Zotero {api_ok('zotero')}")
+
 
     # ── Agent 运行状态指示灯 ──
     try:
@@ -199,7 +245,7 @@ with st.sidebar:
             pass
 
     if active_runs:
-        st.warning(f"🔄 Agent 运行中... ({len(active_runs)} 个会话)")
+        st.warning(f"Agent 运行中... ({len(active_runs)} 个会话)")
     elif run_files:
         last_run = run_files[-1]
         try:
@@ -215,7 +261,7 @@ with st.sidebar:
     # 会话
     sessions = la._list_qa_sessions()
     current_name = st.session_state.qa_session_name or "新会话"
-    if st.button(f"💬 {current_name[:20]}", use_container_width=True):
+    if st.button(f"{current_name[:20]}", use_container_width=True):
         st.session_state._show_session_panel = not st.session_state.get("_show_session_panel", False)
 
     if st.session_state.get("_show_session_panel", False):
@@ -257,18 +303,18 @@ with st.sidebar:
     st.divider()
     page = st.radio(
         "导航",
-        ["💬 知识库问答", "📖 文献笔记", "🤖 Agent", "📊 知识库仪表盘", "⚙ 管理"],
+        ["知识库问答", "文献笔记", "Agent", "知识库仪表盘", "管理"],
         label_visibility="collapsed",
     )
 
 
 # ═══════════════════════════════════════════════════════════════
-#  💬 知识库问答
+#  知识库问答
 # ═══════════════════════════════════════════════════════════════
 
-if page == "💬 知识库问答":
+if page == "知识库问答":
     session_label = st.session_state.qa_session_name or "新会话"
-    st.header(f"💬 知识库问答 — {session_label}")
+    st.header(f"知识库问答 — {session_label}")
 
     # 初始化索引
     if not st.session_state.qa_index_built:
@@ -308,7 +354,7 @@ if page == "💬 知识库问答":
     # ── 设置栏 ──
     col0, col1, col2, col3, col4, col5 = st.columns([0.7, 0.7, 0.7, 0.6, 0.6, 1.2])
     with col0:
-        agent_on = st.toggle("🤖 Agent", st.session_state.qa_agent_mode,
+        agent_on = st.toggle("Agent 模式", st.session_state.qa_agent_mode,
                             help="开启后，系统会自主规划并分步执行复杂任务（如文献综述、理论对比）。关闭则为普通问答。")
         if agent_on != st.session_state.qa_agent_mode:
             st.session_state.qa_agent_mode = agent_on
@@ -331,10 +377,10 @@ if page == "💬 知识库问答":
     with col5:
         col_papers, col_save = st.columns(2)
         with col_papers:
-            if st.button("📄 检索详情", use_container_width=True, help="显示上次检索的文献及评分"):
+            if st.button("检索详情", use_container_width=True, help="显示上次检索的文献及评分"):
                 st.session_state._show_retrieval = not st.session_state.get("_show_retrieval", False)
         with col_save:
-            if st.button("💾 Obsidian", use_container_width=True, help="保存当前对话到 Obsidian QA笔记"):
+            if st.button("保存到 Obsidian", use_container_width=True, help="保存当前对话到 Obsidian QA笔记"):
                 if st.session_state.qa_chat_history:
                     la._QA_NOTES_DIR.mkdir(parents=True, exist_ok=True)
                     now = datetime.now()
@@ -352,8 +398,8 @@ if page == "💬 知识库问答":
     # ── 检索简报卡片 ──
     if latest_briefing:
         with st.expander(
-            f"📋 上次检索简报 — {latest_briefing['date']}  "
-            f"(新文献 {latest_briefing['total']} 篇 | 🔗下载 {latest_briefing['with_links']} | 📭求助 {latest_briefing['help']})",
+            f"上次检索简报 — {latest_briefing['date']}  "
+            f"(新文献 {latest_briefing['total']} 篇 | 下载 {latest_briefing['with_links']} | 求助 {latest_briefing['help']})",
             expanded=False
         ):
             st.caption("AI 会自动将此简报作为上下文参考。点击展开查看完整内容。")
@@ -361,7 +407,7 @@ if page == "💬 知识库问答":
             body = latest_briefing["content"].split("---", 2)[-1] if latest_briefing["content"].count("---") >= 2 else latest_briefing["content"]
             st.markdown(body[:4000] + ("\n\n...(过长截断)" if len(body) > 4000 else ""))
     elif daily_dir.exists() and not briefing_files:
-        st.info("📋 还没有检索简报。在「检索新文献」页面执行一次 Agent 自主检索后，简报会自动推送到这里。")
+        st.info("还没有检索简报。在 Agent 页面执行一次自主检索后，简报会自动推送到这里。")
 
     # ── 渲染历史 ──
     for msg in st.session_state.qa_chat_history:
@@ -403,7 +449,7 @@ if page == "💬 知识库问答":
 
         if use_agent:
             # 1. 规划
-            with st.spinner("🤖 Agent 正在规划..."):
+            with st.spinner("Agent 正在规划..."):
                 plan = _run_async(la.agent_plan(question_augmented, st.session_state.qa_chat_history))
 
             if plan is None:
@@ -418,7 +464,7 @@ if page == "💬 知识库问答":
                     f"{i+1}. **{s['tool']}** — {s.get('reason', '')}"
                     for i, s in enumerate(plan)
                 )
-                with st.status(f"📋 执行计划 ({len(plan)} 步)") as status_container:
+                with st.status(f"执行计划 ({len(plan)} 步)") as status_container:
                     st.markdown(plan_text)
 
                     # 2. 逐步执行
@@ -502,7 +548,7 @@ if page == "💬 知识库问答":
 
             # 检索透明度面板
             if st.session_state.get("_show_retrieval", False) and relevant:
-                with st.expander(f"🔍 检索流水线: 匹配 {len(relevant)} 篇文献", expanded=False):
+                with st.expander(f"检索流水线: 匹配 {len(relevant)} 篇文献", expanded=False):
                     if concept_matches:
                         st.caption("**Step 1: 概念扩展** (中文学术术语 → 英文搜索词)")
                         for cn, en in concept_matches.items():
@@ -554,7 +600,7 @@ if page == "💬 知识库问答":
 
         # 动态智能追问（基于回答内容生成）
         if answer and len(answer) > 50:
-            with st.expander("💡 继续探讨", expanded=True):
+            with st.expander("继续探讨", expanded=True):
                 # 深度追问：用回答内容生成上下文化的追问
                 if "suggestions_ready" not in st.session_state:
                     st.session_state.suggestions_ready = False
@@ -615,19 +661,19 @@ Follow-up questions:"""
 
 
 # ═══════════════════════════════════════════════════════════════
-#  📖 深度阅读 + 入库
+#  深度阅读 + 入库
 # ═══════════════════════════════════════════════════════════════
 
 
-elif page == "📖 文献笔记":
-    st.header("📖 文献笔记")
+elif page == "文献笔记":
+    st.header("文献笔记")
 
     full_data = _load_dashboard_data()
     if not full_data:
         st.info("知识库为空。请先在「深度阅读 + 入库」页面处理 PDF。")
     else:
         # ── 搜索栏 ──
-        st.markdown("##### 🔍 检索")
+        st.markdown("##### 检索")
         col_search, col_year, col_sort = st.columns([3, 1, 1])
         with col_search:
             search_query = st.text_input(
@@ -797,8 +843,8 @@ elif page == "📖 文献笔记":
 
 
 # ═══════════════════════════════════════════════════════════════
-elif page == "🤖 Agent":
-    st.header("🤖 Agent")
+elif page == "Agent":
+    st.header("Agent")
 
     # ── Agent 启动函数 ──
     def _do_launch_agent(yr_s, yr_e, tgt_papers, mx_pages, jrnl_filter, jrnl_free, kw_override):
@@ -832,8 +878,8 @@ elif page == "🤖 Agent":
                 stderr=open(log_dir / "worker_stderr.log", "a"),
                 creationflags=0x00000008 if sys.platform == "win32" else 0,
             )
-            st.success("🦉 Agent Worker 已启动（独立进程，关闭网页不中断）")
-            st.toast("Agent 已启动", icon="🚀")
+            st.success("Agent Worker 已启动（独立进程，关闭网页不中断）")
+            st.toast("Agent 已启动")
         except Exception as e:
             st.error(f"Worker 启动失败: {e}")
 
@@ -865,14 +911,14 @@ elif page == "🤖 Agent":
         except Exception:
             pass
 
-    tab1, tab2 = st.tabs(["🚀 运行", "📊 运行历史"])
+    tab1, tab2 = st.tabs(["运行", "运行历史"])
 
     # ═══════════════════════════════════════════════════════════
     # Tab 1: 运行
     # ═══════════════════════════════════════════════════════════
     with tab1:
         # ── VPN 提醒 ──
-        with st.expander("🔐 VPN 提醒", expanded=True):
+        with st.expander("VPN 提醒", expanded=True):
             st.warning(
                 "**请先连接 湖南大学 VPN**\n\n"
                 "SPIS 基于学校 IP 白名单认证，不连 VPN 将无法检索。\n"
@@ -902,7 +948,7 @@ elif page == "🤖 Agent":
 
         # ── 高级搜索面板 ──
         defaults = _load_config().get("advanced_search_defaults", {})
-        with st.expander("🔧 高级搜索", expanded=False):
+        with st.expander("高级搜索", expanded=False):
             col1, col2 = st.columns(2)
             with col1:
                 custom_kw = st.text_input(
@@ -952,13 +998,13 @@ elif page == "🤖 Agent":
             # 操作按钮行
             col_adv1, col_adv2 = st.columns(2)
             with col_adv1:
-                if st.button("🔄 重置关键词游标", use_container_width=True,
+                if st.button("重置关键词游标", use_container_width=True,
                             help="从第一个关键词重新开始"):
                     la._write_keyword_cursor(0, 0)
-                    st.toast("游标已重置", icon="🔄")
+                    st.toast("游标已重置")
                     st.rerun()
             with col_adv2:
-                if st.button("💾 保存为默认", use_container_width=True,
+                if st.button("保存为默认", use_container_width=True,
                             help="将当前高级搜索参数保存为默认配置"):
                     cfg_to_save = _load_config()
                     cfg_to_save["advanced_search_defaults"] = {
@@ -969,7 +1015,7 @@ elif page == "🤖 Agent":
                         "journal_filter": journal_filter,
                     }
                     _save_config(cfg_to_save)
-                    st.toast("已保存默认配置", icon="💾")
+                    st.toast("已保存默认配置")
                     st.rerun()
 
         # ── 启动按钮组 ──
@@ -977,7 +1023,7 @@ elif page == "🤖 Agent":
         launch_cols = st.columns([2, 1, 1, 1])
         with launch_cols[0]:
             launch_disabled = active_run is not None
-            launch_label = "🚀 启动 Agent" if not launch_disabled else "🔄 Agent 运行中..."
+            launch_label = "启动 Agent" if not launch_disabled else "Agent 运行中..."
             if st.button(launch_label, type="primary", disabled=launch_disabled,
                          use_container_width=True, key="_agent_launch"):
                 # 检查是否修改了高级搜索
@@ -1011,7 +1057,7 @@ elif page == "🤖 Agent":
             st.warning("⚠️ 高级搜索参数与默认配置不同，请选择：")
             cc1, cc2, cc3 = st.columns(3)
             with cc1:
-                if st.button("🚀 仅本次使用", use_container_width=True, key="_confirm_once"):
+                if st.button("仅本次使用", use_container_width=True, key="_confirm_once"):
                     _do_launch_agent(
                         lp.get("yr_start", 2025), lp.get("yr_end", 2026),
                         lp.get("target_papers", 5), lp.get("max_pages", 10),
@@ -1021,7 +1067,7 @@ elif page == "🤖 Agent":
                     st.session_state._confirm_launch = False
                     st.rerun()
             with cc2:
-                if st.button("💾 保存并启动", use_container_width=True, key="_confirm_save"):
+                if st.button("保存并启动", use_container_width=True, key="_confirm_save"):
                     cfg_to_save = _load_config()
                     cfg_to_save["advanced_search_defaults"] = {
                         "year_start": lp.get("yr_start", 2025),
@@ -1049,27 +1095,27 @@ elif page == "🤖 Agent":
             if st.button("⏸ 暂停", disabled=active_run is None, use_container_width=True,
                         help="当前步骤完成后暂停", key="_agent_pause"):
                 _create_signal(".pause")
-                st.toast("暂停信号已发送", icon="⏸")
+                st.toast("暂停信号已发送")
                 st.rerun()
         with launch_cols[2]:
             paused = _signal_exists(".pause")
             if st.button("▶ 继续", disabled=not paused, use_container_width=True,
                         key="_agent_resume"):
                 _remove_signal(".pause")
-                st.toast("继续信号已发送", icon="▶")
+                st.toast("继续信号已发送")
                 st.rerun()
         with launch_cols[3]:
             if st.button("⏹ 终止", disabled=active_run is None, use_container_width=True,
                         help="终止 Agent 运行", key="_agent_term"):
                 _create_signal(".terminate")
                 _remove_signal(".pause")
-                st.toast("终止信号已发送", icon="⏹")
+                st.toast("终止信号已发送")
                 st.rerun()
 
         # ── 实时监控 ──
         if active_run:
             st.divider()
-            st.warning("🔄 Agent 正在运行中 — 实时监控（每 3 秒自动刷新）")
+            st.warning("Agent 正在运行中 — 实时监控（每 3 秒自动刷新）")
 
             # Phase 状态
             p1_status = active_run.get("phase1", {}).get("status", "pending")
@@ -1082,9 +1128,9 @@ elif page == "🤖 Agent":
 
             pc1, pc2, pc3 = st.columns(3)
             for col, label, status in [
-                (pc1, "📡 Phase 1: 检索", p1_status),
-                (pc2, "📖 Phase 2: 深度阅读", p2_status),
-                (pc3, "🔄 Phase 3: 索引同步", p3_status),
+                (pc1, "Phase 1: 检索", p1_status),
+                (pc2, "Phase 2: 深度阅读", p2_status),
+                (pc3, "Phase 3: 索引同步", p3_status),
             ]:
                 with col:
                     icon = {"completed": "✅", "running": "⏳", "failed": "❌",
@@ -1097,22 +1143,22 @@ elif page == "🤖 Agent":
             p1 = active_run.get("phase1", {})
             if p1.get("status") not in ("pending",):
                 mc1, mc2, mc3 = st.columns(3)
-                mc1.metric("📡 检索到", f"{p1.get('papers_total', 0)} 篇")
-                mc2.metric("🔗 有下载链接", f"{p1.get('papers_with_links', 0)} 篇")
-                mc3.metric("📭 已文献求助", f"{p1.get('help_submitted', 0)} 篇")
+                mc1.metric("检索到", f"{p1.get('papers_total', 0)} 篇")
+                mc2.metric("有下载链接", f"{p1.get('papers_with_links', 0)} 篇")
+                mc3.metric("已文献求助", f"{p1.get('help_submitted', 0)} 篇")
 
             # Phase 2 metrics
             p2 = active_run.get("phase2", {})
             if p2.get("status") not in ("pending",):
                 mc1, mc2, mc3 = st.columns(3)
-                mc1.metric("✅ 已入库", f"{p2.get('papers_processed', 0)} 篇")
-                mc2.metric("❌ 失败", f"{p2.get('papers_failed', 0)} 篇")
-                mc3.metric("⏭ 跳过", f"{p2.get('papers_skipped', 0)} 篇")
+                mc1.metric("已入库", f"{p2.get('papers_processed', 0)} 篇")
+                mc2.metric("失败", f"{p2.get('papers_failed', 0)} 篇")
+                mc3.metric("跳过", f"{p2.get('papers_skipped', 0)} 篇")
 
                 # 当前处理的论文
                 current = p2.get("_currently_processing")
                 if current:
-                    st.caption(f"🔍 正在处理: **{current.get('title', '?')[:80]}**")
+                    st.caption(f"正在处理: **{current.get('title', '?')[:80]}**")
 
                 # 已完成的论文摘要
                 for pap in p2.get("papers", []):
@@ -1127,7 +1173,7 @@ elif page == "🤖 Agent":
             # Phase 3
             p3 = active_run.get("phase3", {})
             if p3.get("status") == "completed":
-                st.success(f"🔄 Phase 3 完成 — 索引 {p3.get('index_size', '?')} 篇")
+                st.success(f"Phase 3 完成 — 索引 {p3.get('index_size', '?')} 篇")
 
             # 关键词游标进度
             kc = active_run.get("keyword_cursor")
@@ -1143,14 +1189,14 @@ elif page == "🤖 Agent":
         # ── 空状态：无运行中 ──
         if not active_run:
             st.divider()
-            st.caption("💡 点击「🚀 启动 Agent」开始全自动检索 + 深度阅读 + 入库。关闭网页不影响运行。")
+            st.caption("点击「启动 Agent」开始全自动检索 + 深度阅读 + 入库。关闭网页不影响运行。")
 
     # ═══════════════════════════════════════════════════════════
     # Tab 2: 运行历史
     # ═══════════════════════════════════════════════════════════
     with tab2:
         if not run_files:
-            st.info("🦉 还没有运行记录。点击「🚀 启动 Agent」运行完成后会自动生成。")
+            st.info("还没有运行记录。点击「启动 Agent」运行完成后会自动生成。")
         else:
             # ── 概览卡片 ──
             total_runs = len(run_files)
@@ -1174,7 +1220,7 @@ elif page == "🤖 Agent":
             c4.metric("累计入库", f"{total_processed} 篇")
 
             st.divider()
-            st.subheader("📋 运行历史")
+            st.subheader("运行历史")
 
             for rf in run_files:
                 try:
@@ -1210,28 +1256,28 @@ elif page == "🤖 Agent":
                 vpn_tag = ""
                 if vpn_info:
                     if vpn_info.get("skipped"):
-                        vpn_tag = " · 🔒 VPN未连"
+                        vpn_tag = " · VPN未连"
                     elif vpn_info.get("connected"):
-                        vpn_tag = f" · 🔐 VPN已连({vpn_info.get('waited_seconds', 0):.0f}s)"
+                        vpn_tag = f" · VPN已连({vpn_info.get('waited_seconds', 0):.0f}s)"
 
                 # Phase 1 label
                 if p1_status == "skipped":
-                    p1_label = "📡 ⏭检索跳过"
+                    p1_label = "检索跳过"
                 else:
-                    p1_label = f"📡 {p1_total}篇检索"
+                    p1_label = f"{p1_total}篇检索"
 
                 if kw_exhausted:
-                    vpn_tag += " · 🎉 关键词遍历完毕"
+                    vpn_tag += " · 关键词遍历完毕"
 
                 expander_label = (
                     f"{status_icon_} **{started}** — "
-                    f"{p1_label} | 📖 {p2_ok}篇入库"
-                    f"{' | ❌' + str(p2_fail) + '失败' if p2_fail else ''}"
+                    f"{p1_label} | {p2_ok}篇入库"
+                    f"{' | ' + str(p2_fail) + '失败' if p2_fail else ''}"
                     f"{vpn_tag}{duration}"
                 )
                 with st.expander(expander_label):
                     tab_r1, tab_r2, tab_r3, tab_r4 = st.tabs([
-                        "📡 检索清单", "📖 深度阅读", "📝 简报", "⚙ 配置"
+                        "检索清单", "深度阅读", "简报", "配置"
                     ])
 
                     with tab_r1:
@@ -1242,11 +1288,11 @@ elif page == "🤖 Agent":
                             st.warning(f"⏭ **Phase 1 已跳过**：{reason}")
                         elif p1_papers:
                             st.caption(
-                                f"共 {p1_total} 篇：🔗 {p1_links} 篇有下载链接 "
-                                f"| 📭 {run.get('phase1', {}).get('papers_without_links', 0)} 篇已文献求助"
+                                f"共 {p1_total} 篇：{p1_links} 篇有下载链接 "
+                                f"| {run.get('phase1', {}).get('papers_without_links', 0)} 篇已文献求助"
                             )
                             for p in p1_papers:
-                                icon = "🔗" if p.get("has_download_link") else "📭"
+                                icon = "有链接" if p.get("has_download_link") else "已求助"
                                 st.markdown(f"{icon} **{p.get('title', '?')[:120]}**")
                                 meta = []
                                 if p.get("journal"):
@@ -1293,10 +1339,10 @@ elif page == "🤖 Agent":
                             "状态": status,
                         })
                         if kw_exhausted:
-                            st.success("🎉 本次运行中所有关键词遍历完毕")
+                            st.success("本次运行中所有关键词遍历完毕")
 
-elif page == "📊 知识库仪表盘":
-    st.header("📊 知识库仪表盘")
+elif page == "知识库仪表盘":
+    st.header("知识库仪表盘")
 
     idx_count, idx = _get_paper_index()
     full_data = _load_dashboard_data()  # 完整 17 字段数据
@@ -1324,7 +1370,7 @@ elif page == "📊 知识库仪表盘":
 
         # ── Tabs ──
         tab1, tab2, tab3, tab4, tab5 = st.tabs([
-            "📈 年份/IF/期刊", "🧩 理论概念图", "🔬 变量网络",
+            "年份/IF/期刊", "理论概念图", "变量网络",
             "🏷 主题关键词", "🔭 研究空白"
         ])
 
@@ -2118,7 +2164,7 @@ elif page == "📊 知识库仪表盘":
                     st.caption(f"**理论分布 Top {len(top_theories)}**（共检出 {len(theory_counts)} 个理论框架）")
                     st.bar_chart({t[:30]: c for t, c in top_theories})
 
-                    with st.expander("📄 理论-论文关联"):
+                    with st.expander("理论-论文关联"):
                         for theory, count in top_theories:
                             papers = theory_papers.get(theory, [])
                             st.markdown(f"**{theory}** ({count}篇)")
@@ -2128,7 +2174,7 @@ elif page == "📊 知识库仪表盘":
                                 st.caption(f"  ... 还有 {len(papers)-5} 篇")
 
                 with col_theory_info:
-                    st.caption("**📖 理论详解**")
+                    st.caption("**理论详解**")
                     selected_theory = st.selectbox(
                         "选择理论",
                         [""] + [t for t, c in top_theories],
@@ -2350,7 +2396,7 @@ elif page == "📊 知识库仪表盘":
                             html = fh.read()
                         os.unlink(tmp.name)
                         st.components.v1.html(html, height=640, scrolling=False)
-                        st.caption("💡 拖拽节点 · 滚轮缩放 · 悬停看详情 · 底部按钮平移")
+                        st.caption("拖拽节点 · 滚轮缩放 · 悬停看详情 · 底部按钮平移")
 
                     with col_stats:
                         st.caption(f"**{G.number_of_nodes()} 个变量 · {G.number_of_edges()} 条边**")
@@ -2501,13 +2547,13 @@ elif page == "📊 知识库仪表盘":
 
 
 # ═══════════════════════════════════════════════════════════════
-#  ⚙ 管理
+#  管理
 # ═══════════════════════════════════════════════════════════════
 
-elif page == "⚙ 管理":
-    st.header("⚙ 管理")
+elif page == "管理":
+    st.header("管理")
 
-    tab1, tab2, tab3, tab4, tab5 = st.tabs(["🗑 清理 PDF", "🔍 待复核", "🔄 批量重读", "🔑 关键词管理", "📋 系统状态"])
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(["清理 PDF", "待复核", "🔄 批量重读", "关键词管理", "系统状态"])
 
     # ── Tab 1: 清理 PDF ──
     with tab1:
@@ -2553,12 +2599,12 @@ elif page == "⚙ 管理":
 
     # ── Tab 2: 待复核队列 ──
     with tab2:
-        st.subheader("🔍 待人工复核")
+        st.subheader("待人工复核")
         st.caption("防幻觉流水线自动标记的 🟡/🔴 笔记，集中在此处复核。")
 
         queue = la._get_review_queue()
         if not queue:
-            st.success("🎉 复核队列为空，所有笔记均为高置信。")
+            st.success("复核队列为空，所有笔记均为高置信。")
         else:
             # 统计
             low_count = sum(1 for q in queue if q.get("confidence") == "low")
@@ -2566,7 +2612,7 @@ elif page == "⚙ 管理":
             col_a, col_b, col_c = st.columns(3)
             col_a.metric("🔴 低置信 (需复核)", low_count)
             col_b.metric("🟡 中置信 (建议复核)", med_count)
-            col_c.metric("📋 总计", len(queue))
+            col_c.metric("总计", len(queue))
 
             st.divider()
             for i, item in enumerate(queue):
@@ -2622,7 +2668,7 @@ elif page == "⚙ 管理":
         cfg = _load_config()
         zotero_cfg = cfg.get("zotero", {})
         if zotero_cfg.get("api_key"):
-            if st.button("📋 获取 Zotero 文献列表"):
+            if st.button("获取 Zotero 文献列表"):
                 with st.spinner("从 Zotero 获取..."):
                     try:
                         coll_key = _run_async(la.get_zotero_collection_key())
@@ -2633,7 +2679,7 @@ elif page == "⚙ 管理":
                         st.error(f"获取失败: {e}")
 
             st.divider()
-            if st.button("🚀 开始批量重读", type="primary"):
+            if st.button("开始批量重读", type="primary"):
                 with st.spinner("批量重读中...（可能需要较长时间）"):
                     try:
                         _run_async(la.re_read_from_zotero_flow())
@@ -2662,7 +2708,7 @@ elif page == "⚙ 管理":
             st.markdown("**Narrow 关键词**")
             new_narrow = st.text_area("每行一个", value="\n".join(keywords_cfg.get("narrow", [])), height=150, key="narrow_kw_edit")
 
-        if st.button("💾 保存关键词", type="primary"):
+        if st.button("保存关键词", type="primary"):
             cfg["keywords"] = {
                 "broad": [k.strip() for k in new_broad.split("\n") if k.strip()],
                 "narrow": [k.strip() for k in new_narrow.split("\n") if k.strip()],

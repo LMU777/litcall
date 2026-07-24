@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-🦉 ATHENA Agent Worker — 独立子进程执行器
+📖 LitCall Agent Worker — 独立子进程执行器
 
 由 Streamlit 通过 subprocess.Popen 拉起，独立于 Web 进程运行。
 浏览器关闭不影响执行。进度通过 AgentRunLogger JSON 文件汇报。
@@ -22,7 +22,7 @@ from literature_agent import full_autonomous_session, logger, AgentSignalError
 
 
 async def main():
-    parser = argparse.ArgumentParser(description="ATHENA Agent Worker")
+    parser = argparse.ArgumentParser(description="LitCall Agent Worker")
     parser.add_argument("--year-start", type=int, default=2025)
     parser.add_argument("--year-end", type=int, default=2026)
     parser.add_argument("--headless", action="store_true", default=False,
@@ -45,7 +45,7 @@ async def main():
     keyword_override = args.keyword_override.strip() or None
 
     logger.info("=" * 60)
-    logger.info(f"🦉 ATHENA Agent Worker 启动 (独立进程)")
+    logger.info(f"📖 LitCall Agent Worker 启动 (独立进程)")
     logger.info(f"   年份: {args.year_start}-{args.year_end}")
     logger.info(f"   无头: {args.headless}")
     logger.info(f"   总篇数: {args.target_papers}")

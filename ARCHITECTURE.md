@@ -1,6 +1,6 @@
-# ATHENA — Architecture & Design
+# LitCall — Architecture & Design
 
-> Key design decisions, data flow, and trade-offs behind the ATHENA literature agent.
+> Key design decisions, data flow, and trade-offs behind the LitCall literature agent.
 
 ---
 

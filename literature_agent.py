@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-literature_agent.py — ATHENA 学术文本深度阅读与知识管理智能体
+literature_agent.py — LitCall 学术文本深度阅读与知识管理智能体
 Academic Text Harvesting & Empirical Note-taking Agent
 - 渐进式关键词检索，收集满 20 篇新文献后停止。
 - Zotero + processed_log.json 双重去重。
@@ -5104,7 +5104,7 @@ def generate_daily_briefing(result: dict, session_start: str = "") -> str:
     lines.extend([
         "---",
         "",
-        f"# 🦉 ATHENA 自主检索简报 — {date_str} {weekday} {time_str}",
+        f"# 📖 LitCall 自主检索简报 — {date_str} {weekday} {time_str}",
         "",
         "## 📊 概览",
         "",
@@ -5190,15 +5190,15 @@ def generate_daily_briefing(result: dict, session_start: str = "") -> str:
         f"1. 打开 SPIS (https://spis.hnlat.com)，搜索论文标题",
         "2. 进入详情页，点击下载按钮下载 PDF",
         f"3. 将下载的 PDF 放入 `新论文待处理/` 文件夹",
-        f"4. 在 ATHENA 中选择「深度阅读」进行自动处理",
+        f"4. 在 LitCall 中选择「深度阅读」进行自动处理",
         "",
         "### 对于已提交文献求助的论文：",
         "1. 等待 1-3 个工作日，检查 18922596828@163.com 邮箱",
         "2. 收到 PDF 后放入 `新论文待处理/` 文件夹",
-        "3. 在 ATHENA 中处理",
+        "3. 在 LitCall 中处理",
         "",
         "---",
-        f"*本简报由 ATHENA Agent 自动生成 · {date_str} {time_str}*",
+        f"*本简报由 LitCall Agent 自动生成 · {date_str} {time_str}*",
     ])
 
     content = "\n".join(lines)
@@ -5237,7 +5237,7 @@ async def autonomous_retrieval_session(
     session_start = datetime.now().isoformat()
 
     logger.info("=" * 60)
-    logger.info("🦉 ATHENA Phase 1: 自主文献检索")
+    logger.info("📖 LitCall Phase 1: 自主文献检索")
     logger.info(f"   时间: {session_start}")
     logger.info(f"   年份: {year_start}-{year_end}")
     logger.info(f"   模式: 每运行收 {global_paper_limit} 篇（跨关键词总计）")
@@ -5928,7 +5928,7 @@ async def full_autonomous_session(
     )
 
     logger.info("=" * 60)
-    logger.info("🦉 ATHENA 完整自主会话启动")
+    logger.info("📖 LitCall 完整自主会话启动")
     logger.info("=" * 60)
 
     # ═══ Phase 0: VPN 连通性检测 ═══
@@ -6041,7 +6041,7 @@ async def full_autonomous_session(
     failed = pdf_result.get("failed", [])
 
     print("\n" + "=" * 60)
-    print("  🦉 ATHENA 完整会话 — 最终报告")
+    print("  📖 LitCall 完整会话 — 最终报告")
     print("=" * 60)
     print(f"  Phase 1 检索:")
     print(f"    新文献:   {len(collected)} 篇")
