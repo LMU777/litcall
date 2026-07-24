@@ -1,0 +1,36 @@
+# ── 敏感信息（绝对不上传）──
+config.json
+*.env
+
+# ── Claude Code ──
+.claude/
+CLAUDE.md
+
+# ── 运行日志（含个人信息）──
+运行日志/
+
+# ── 新论文待处理 ──
+新论文待处理/*.pdf
+新论文待处理/pending_manual.json
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ── Obsidian 工作区 ──
+agent抓取/.obsidian/workspace.json
+agent抓取/.obsidian/backlink.json
+
+# ── 临时文件 ──
+*.tmp
+*.tmp.json
+docx_output.txt
+
+# ── IDE ──
+.idea/
+.vscode/
+*.swp
+*.swo

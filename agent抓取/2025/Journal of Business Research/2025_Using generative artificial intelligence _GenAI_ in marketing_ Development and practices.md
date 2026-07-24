@@ -1,0 +1,72 @@
+---
+title: "Using generative artificial intelligence (GenAI) in marketing: Development and practices"
+authors: "Hau-Ling Chan（第一作者）, Tsan-Ming Choi（通讯作者）"
+first_author: "Hau-Ling Chan"
+corresponding_author: "Tsan-Ming Choi"
+year: 2025
+journal: "Journal of Business Research"
+impact_factor: "11.3"
+zone: ""
+doi: "10.1016/j.jbusres.2025.115276"
+keywords: "generative artificial intelligence; marketing; classification; practices; future research"
+pdf: "C:/Users/LI-UF/Desktop/Claude/semi_autp_paper/新论文待处理/Using generative artificial intelligence (GenAI) in marketing Development and practices.pdf"
+reading_mode: ""
+reading_date: ""
+tags: [AI, marketing, Journal of Business Research, generative-AI, classification, practices, future-research]
+---
+
+## 研究背景与动机
+生成式人工智能（GenAI）是商业研究和市场营销中的一个新兴话题。自2022年11月OpenAI发布ChatGPT以来，该应用在两个月内吸引了约1亿用户，成为增长最快的消费者应用。预计超过92%的财富500强公司将采用ChatGPT，并在2024年产生约10亿美元收入。GenAI通过GANs、VAEs和Transformer模型等算法学习模式并生成新内容（文本、图像、音乐、视频等），区别于仅能按规则执行特定任务的传统AI。在营销领域，GenAI可用于内容创作、视觉材料生成、消费者查询响应、情感分析、行为模式识别和个性化推荐。然而，现有文献中，探讨GenAI聊天机器人如何影响营销策略和消费者研究的主流商业和营销期刊文章非常有限。初步文献检索发现，仅有少数概念性和讨论性论文涉及机器学习在营销和商业研究中的应用，而同时讨论GenAI、机器学习和营销的论文仅有两篇。因此，本文旨在通过系统文献检索和工业实践讨论，填补这一空白，为GenAI在营销中的应用提供分类和未来研究议程。
+
+## 研究问题
+本文为综述性论文，未提出明确的研究问题或假设。其核心目标为：（1）通过系统文献检索，了解GenAI在营销领域的发展；（2）将收集的文献分类为四个主要主题；（3）讨论相关工业实践，突出GenAI在主要行业中的实际应用；（4）基于文献和实践，提出未来研究议程。理论框架方面，本文识别了现有研究中使用的理论（如anthropomorphism、uses and gratifications theory等），但未构建统一的理论框架。核心构念包括GenAI的应用、消费者采纳与担忧、服务、广告和创新，这些构念在文献分类中作为主题出现，而非变量关系。
+
+## 变量汇总
+
+
+## 研究方法
+本研究采用系统文献检索方法，分两个阶段进行。第一阶段使用Web of Science（WoS）作为搜索引擎，以组合关键词（“ChatGPT” OR “Google bard” OR “AI chat service” OR “AI chatbot” OR “Artificial intelligence chatbot” OR “Artificial intelligence chat service” OR “AI-powered service” OR “generative AI” OR “GenAI”）AND “Marketing”进行全字段检索，初始获得111篇文章。随后筛选仅来自SCIE和SSCI期刊的文章，得到78篇。通过阅读摘要和引言，筛除49篇与营销和消费者研究子领域不相关的文章。此阶段于2023年冬季进行，2024年1月初完成。第二阶段使用Scopus数据库，以“generative artificial intelligence” OR “generative AI” AND “marketing”在文章标题、摘要和关键词中检索，限定学科领域为商业、管理和会计，文献类型为文章和综述，额外识别20篇文章。此阶段于2024年6月初完成。最终，基于内容分析，将收集的文献分类为四个主要主题：（i）消费者对GenAI的应用、采纳与担忧；（ii）服务；（iii）广告；（iv）创新。此外，通过审查新闻报告、行业报告和公司网站，讨论了六个代表性工业实践案例（Coca-Cola、Expedia、Michaels Stores、Mattel、DHL、制药与医疗行业）。
+
+## 研究结果
+本文为综述性论文，无定量假设检验。核心发现如下：
+1. 现有文献可分类为四个主题：消费者对GenAI的应用、采纳与担忧；服务；广告；创新。
+2. 最常用的理论是“anthropomorphism”（在3项研究中使用），其他理论均仅被一篇论文使用，表明该领域研究尚处于初级阶段。
+3. 在消费者采纳方面，研究发现性别、年龄、信任、感知有用性、拟人化等因素影响消费者对GenAI的使用意愿。例如，Gude（2023）发现年龄和性别显著影响消费者对ChatGPT的信任，进而影响使用意愿，且男性更可能使用基于GenAI的搜索引擎。
+4. 在服务领域，GenAI可增强个性化服务、客户沟通和满意度，但也存在挑战，如信息不准确、缺乏透明度、数据隐私问题。例如，Luo et al.（2019）发现消费者知晓AI聊天机器人存在时会降低购买意愿，但若消费者有先前AI交互经验或企业推迟披露时机，负面影响可缓解。
+5. 在广告领域，GenAI可支持创意概念生成、文案撰写和广告格式多样化，但深度伪造技术引发真实性和信任问题。
+6. 在创新领域，GenAI可促进产品设计创新，但消费者可能认为AI创造的产品缺乏创意。例如，Magni et al.（2024）发现当被告知产品由AI创建时，消费者认为其创造力较低。
+7. 工业实践案例显示，GenAI在营销中已应用于个性化内容创作（Coca-Cola）、旅行推荐（Expedia）、邮件营销个性化（Michaels Stores，个性化程度从20%提升至95%，点击率提升超过40%）、产品设计（Mattel）、客户服务自动化（DHL）和药物设计（制药行业）。
+
+## 讨论与结论
+作者认为GenAI是营销和消费者研究中的革命性技术工具，其部署影响企业营销策略和消费者行为。本文通过系统文献检索和工业实践讨论，填补了该领域缺乏系统综述的空白。作者将现有文献分类为四个主题，并基于实践提出了未来研究方向。讨论中，作者指出现有研究多集中于酒店和旅游行业，其他行业的研究不足；GenAI可能产生看似可信但不准确或无关的回应（幻觉问题），且缺乏透明度，数据隐私问题突出。作者强调，GenAI在服务中的应用需考虑感知服务质量（如SERVQUAL模型中的同理心），在广告中需关注深度伪造的真实性和伦理问题，在创新中需解决知识产权和版权问题。本文的讨论逻辑合理，与已有文献一致，但作为综述，未提供实证检验。值得商榷的是，作者未对四个主题的文献进行元分析或系统性比较，仅进行了描述性分类。
+
+## 创新点
+1. 理论创新：首次对GenAI在营销领域的文献进行系统分类，识别出四个主要主题（应用、采纳与担忧；服务；广告；创新），并总结了现有研究中使用的理论（如anthropomorphism、uses and gratifications theory等），指出该领域理论应用尚处于初级阶段。
+2. 方法创新：采用两阶段系统文献检索（WoS和Scopus），确保文献的权威性和全面性。
+3. 实践创新：通过分析六个代表性工业实践案例（Coca-Cola、Expedia、Michaels Stores、Mattel、DHL、制药与医疗行业），将学术文献与现实应用相结合，识别研究与实践之间的差距。
+4. 未来研究议程：基于文献和实践，为每个主题提出了具体的研究问题，为后续研究提供了方向。
+
+## 局限与展望
+- 局限性：
+（1）本文仅选择Web of Science和Scopus作为检索引擎，尽管确保了文献来自权威期刊，但可能遗漏其他平台（如Direct Science、Google Scholar）或工作论文门户（如SSRN）上的优秀论文。
+- 未来研究方向：
+（1）未来可从其他平台（如Direct Science、Google Scholar、SSRN）收集更多文献，以扩大综述范围。
+（2）在消费者对GenAI的应用、采纳与担忧主题下，建议研究：如何利用GenAI创建个性化虚拟形象及其对用户参与和品牌忠诚的影响；品牌如何在AI生成虚拟形象与真实人类互动之间取得平衡；AI生成内容的社会影响；不同类型AI生成内容对成瘾行为的影响；如何评估AI生成内容在实现营销目标中的有效性。
+（3）在服务主题下，建议研究：如何开发更有效的算法检测AI生成的错误信息；如何量化和衡量AI生成内容在服务中的可靠性；如何使GenAI系统更透明和可解释；人机协作创建营销内容的最有效方法；不同服务行业中影响个体接受和信任GenAI计划的因素；GenAI在个性化推荐或治疗中对用户满意度的影响。
+（4）在广告主题下，建议研究：品牌是否应披露深度伪造技术的使用及其对消费者信任和品牌感知的影响；深度伪造广告如何影响消费者参与和互动；深度伪造广告与传统广告对品牌忠诚的影响差异；深度伪造广告的感知伦理如何影响消费者行为和态度。
+（5）在创新主题下，建议研究：消费者如何感知GenAI生成与人类创作的音乐、时尚等创意作品的价值和真实性；影响消费者接受和信任GenAI生成内容的因素；消费者对制药公司使用GenAI开发药物的态度；制药公司是否应披露药物由GenAI设计及其对消费者尝试新药意愿的影响；保护创作者、设计师和客户权利的新法律框架。
+
+---
+## 相关概念
+- [[generative AI]]
+- [[marketing]]
+- [[classification]]
+- [[practices]]
+- [[future research]]
+
+---
+## 图表索引
+
+![[attachments/Using generative artificial in_fig1.png]]
+
+![[attachments/Using generative artificial in_fig2.png]]

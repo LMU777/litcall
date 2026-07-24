@@ -1,0 +1,103 @@
+---
+title: "Consumer empowerment through generative artificial intelligence: enhancing brand narrative with collaboration, creation, and communication"
+authors: "Yang Feng（第一作者, 通讯作者）, Yuan Sun"
+first_author: "Yang Feng"
+corresponding_author: "Yang Feng"
+year: 2025
+journal: "International Journal of Advertising"
+impact_factor: "6.1"
+zone: ""
+doi: "10.1080/02650487.2025.2547545"
+keywords: "generative artificial intelligence; consumer-generated advertising; co-creation; anthropocentrism; consumer empowerment"
+pdf: "C:/Users/LI-UF/Zotero/storage/A62RTDRA/Consumer-empowerment-through-generative-artificial-intelligence-enhancing-brand-narrative-with-collaboration-creation-and-communication.pdf"
+reading_mode: ""
+reading_date: ""
+tags: [AI, marketing, International Journal of Adver, generative-AI, consumer-generated-advertising, co-creation, anthropocentrism, consumer-empowerment]
+---
+
+## 研究背景与动机
+尽管生成式人工智能（GenAI）在品牌邀请消费者共同创作品牌相关内容（即消费者生成广告，CGA）中日益流行，但学界对这种实践如何影响消费者赋权及广告效果知之甚少。传统上，企业通过征集品牌相关的用户生成内容（CGA）来促进合作并通过价值共创赋权消费者。然而，现有研究存在两个主要缺口：第一，以往研究（如Shulga et al., 2023）将消费者赋权视为静态结果，未探索其在共创过程中的演变；第二，虽然部分研究探讨了消费者在价值共创中的参与（如Herrmann & Ford, 2023; Orazi & Newton, 2018），但未考察GenAI在塑造这一动态过程中的作用。GenAI（如ChatGPT、Midjourney、DALL·E）与传统基于规则的数字工具（如Photoshop）有本质区别，因其具备学习和适应性，能够响应用户提示并生成独特创新的内容。因此，理解人类-GenAI共创过程中的关键因素对于揭示其带来的积极消费者体验至关重要。本文以人类中心主义（anthropocentric perspective）为理论视角，强调人类经验在解释世界中的中心地位，旨在探索人类参与和AI能力如何交叉以赋权消费者。
+
+## 研究问题
+本研究采用混合方法-扎根理论（MM-GT）方法，通过定性研究（研究1）识别人类-GenAI共创过程中的关键构念，并通过定量研究（研究2）验证这些构念与消费者赋权、品牌态度和购买意向之间的关系。具体假设如下：
+H1: 人类主导的协作（human-led collaboration）与消费者赋权之间存在正向关系。
+H2: GenAI的沟通有效性（communication effectiveness）与消费者赋权之间存在正向关系。
+H3: GenAI的创造能力（creation capacity）与消费者赋权之间存在非线性关系，具体而言，前者与消费者赋权呈倒U型关系，即更高的创造能力先增加后减少消费者赋权。
+H4: a) 消费者赋权与品牌态度之间存在正向关系；b) 消费者赋权与购买意向之间存在正向关系。
+理论框架：研究基于人类中心主义视角，提出3C框架（协作、创造、沟通）作为人类-GenAI共创过程的核心构念。协作（collaboration）指用户感知到的在共创过程中的控制和领导程度；创造（creation）指GenAI被感知为能够生成原创和高质量内容的程度；沟通（communication）指GenAI有效理解和响应用户输入的程度。这三个构念作为前因，消费者赋权作为中介变量，品牌态度和购买意向作为结果变量。
+
+## 变量汇总
+协作（Collaboration）：自变量。概念定义：用户感知到的在共创过程中的控制和领导程度，涵盖人类努力、指导和最终输出的权威。测量方式：4个题项，采用双极量表（bipolar scale），从“GenAI主导”到“人类主导”。Cronbach's alpha = 0.909。
+创造（Creation）：自变量。概念定义：GenAI被感知为能够生成原创和高质量内容的程度，强调新颖性、原创性和创造力。测量方式：4个题项，采用李克特量表。Cronbach's alpha = 0.937。
+沟通（Communication）：自变量。概念定义：GenAI有效理解和响应用户输入的程度，关注清晰度、响应性和用户对生成结果的满意度。测量方式：4个题项，采用李克特量表。Cronbach's alpha = 0.974。
+消费者赋权（Consumer Empowerment）：中介变量。概念定义：消费者在品牌相关决策中感知到的权威和控制，使其从被动接受者转变为主动问题解决者。测量方式：4个题项，改编自Christodoulides, Jevons, and Bonhomme (2012)和Füller et al. (2009)，采用7点李克特量表（1=非常不同意，7=非常同意）。Cronbach's alpha = 0.96。
+品牌态度（Brand Attitude）：因变量。概念定义：消费者对品牌的整体评价。测量方式：3个题项，改编自Brakus, Schmitt, and Zarantonello (2009); Carnevale, Yucel-Aybat, and Kachersky (2018); Mittal (1990)，采用7点语义差异量表。Cronbach's alpha = 0.966。
+购买意向（Purchase Intention）：因变量。概念定义：消费者购买品牌产品的意愿。测量方式：3个题项，改编自Baek et al. (2017)，采用7点李克特量表。Cronbach's alpha = 0.961。
+控制变量：年龄、性别（1=男性，0=非男性）、种族（1=白人，0=非白人）、虚假感（sense of falsity）、AI熟悉度（AI familiarity）、领域知识（domain knowledge）、产品卷入度（product involvement）、环境关注（environmental concern）。
+
+## 研究方法
+本研究采用四阶段混合方法-扎根理论（MM-GT）方法。研究1（定性研究）覆盖前两个阶段（理论发展和工具开发），旨在通过建构主义扎根理论方法识别关键构念并生成测量题项。研究2（定量研究）覆盖第三阶段（模型定量检验），旨在验证测量工具并检验假设。
+研究1：对17名有经验的GenAI用户进行深度访谈。这些用户来自不同行业（如公关、高科技、初创企业、社交媒体、创意广告等），均在日常工作中使用GenAI工具（如ChatGPT）进行内容创作。采用理论抽样，首先通过个人网络和在线社交网站联系5名参与者，随后根据数据深化情况识别更多潜在受访者。访谈通过视频会议平台进行并录音转录。数据分析遵循扎根理论的基本流程：开放编码、轴心编码和选择性编码，采用持续比较法。两位作者独立编码，出现不一致时讨论解决。整个过程中编写理论备忘录。
+研究2：在线调查。首先进行预测试：从Amazon Mechanical Turk招募44名咖啡饮用者（29.55%男性，Mage=34.09，SDage=5.34），要求他们为虚构品牌“Harbor Haven Coffee”创建文本提示，以生成品牌图像。基于预测试结果，使用DALL·E生成一张图像用于主测试。主测试：从Prolific收集326名参与者（Mage=40.13，SDage=13.23；35.58%男性；63.50%白人），所有参与者位于美国且批准率为100%。参与者首先报告产品卷入度、虚假感、AI熟悉度、领域知识、环境关注等控制变量。然后，他们阅读GenAI定义，并访问一个模拟网站（模仿可口可乐“Create Real Magic”活动设计），该网站介绍虚构品牌“Harbor Haven Coffee”。参与者被要求使用网站上的GenAI工具生成代表该品牌的图像，并输入以“Create an image for Harbor Haven Coffee that [参与者完成提示]”开头的提示。实际上，所有参与者看到的是同一张图像，以最小化不同图像带来的混淆因素。之后，参与者报告品牌态度、购买意向、赋权、协作、创造和沟通。最后回答人口统计问题。数据分析采用SmartPLS 4软件进行偏最小二乘结构方程模型（PLS-SEM）分析，包括测量模型评估和结构模型评估。
+
+## 研究结果
+测量模型评估：SRMR值为0.04，低于0.08阈值，表明模型拟合可接受。所有题项载荷均高于0.70。所有构念的组合信度和Cronbach's alpha值均超过0.80，AVE值均高于0.50，表明收敛效度良好。除购买意向与品牌态度之间的HTMT值为0.87（低于0.9阈值）外，其他HTMT值均低于0.85，判别效度基本成立。共同方法偏差检验（随机因变量法、标记变量法）和非响应偏差检验（波分析）均未发现显著问题。
+结构模型评估：采用5000次自助抽样。
+H1（人类主导的协作→消费者赋权）：支持。β = 0.29, p < 0.001。
+H2（GenAI的沟通有效性→消费者赋权）：支持。β = 0.17, p < 0.01。
+H3（GenAI的创造能力与消费者赋权的倒U型关系）：支持。线性项β = 0.36, p < 0.001；二次项β = -0.09, p < 0.05。
+H4a（消费者赋权→品牌态度）：支持。β = 0.70, p < 0.001。
+H4b（消费者赋权→购买意向）：支持。β = 0.22, p < 0.001。
+此外，品牌态度对购买意向有显著正向影响（β = 0.58, p < 0.001）。
+控制变量中：AI熟悉度（β = 0.08, p < 0.01）和产品卷入度（β = 0.17, p < 0.001）正向影响购买意向；虚假感（β = -0.09, p < 0.01）和领域知识（β = -0.09, p < 0.01）负向影响购买意向；非白人参与者比白人参与者感到更赋权（β = -0.09, p < 0.05）。
+模型解释力：消费者赋权的R² = 0.58；品牌态度的R² = 0.58；购买意向的R² = 0.78。预测相关性：赋权Q² = 0.47，品牌态度Q² = 0.53，购买意向Q² = 0.71。
+核心发现：
+1. 人类主导的协作和有效的沟通正向促进消费者赋权。
+2. GenAI的创造能力与消费者赋权呈倒U型关系：适度水平的创造能力增强赋权，但过高水平会削弱赋权。
+3. 消费者赋权正向影响品牌态度和购买意向。
+4. 品牌态度进一步正向影响购买意向。
+
+## 讨论与结论
+作者将结果解释为：人类主导的协作（H1支持）和有效的沟通（H2支持）正向促进赋权，这符合人类中心主义视角——当消费者在共创过程中保持控制和领导，且GenAI能有效响应其提示时，他们感到更赋权。GenAI创造能力与赋权的倒U型关系（H3支持）表明，适度的创造能力能增强消费者创造力（协同创造力），但过高的创造能力可能挑战“创造力是人类独有特质”的人类中心主义信念，从而削弱赋权。赋权对品牌态度和购买意向的正向影响（H4支持）与以往研究一致。
+与已有文献的关系：本研究扩展了CGA文献，通过引入GenAI作为智能、响应性合作伙伴，区别于传统消费者-品牌共创。3C框架体现了人类中心主义视角，将人类置于技术中心以赋权他们，而非让机器智能构成威胁。研究填补了以往将赋权视为静态结果的空白（如Shulga et al., 2023），揭示了赋权在协作过程中的动态演变。沟通方面，研究揭示了人类-GenAI互动的互惠性质，强调了沟通有效性在产生赋权中的重要性，超越了以往仅关注GenAI技术能力的研究（如Wu et al., 2023）。创造方面，研究发现了GenAI创造能力的阈值效应，与以往认为线性正向关系的观点（如Shukla, 2023）形成对比。
+理论含义：提出了3C框架作为理解人类-GenAI共创过程的新方法，推进了人类中心主义视角在AI广告文献中的应用。
+实践含义：广告商应采用人类中心主义的共创方法，设计促进消费者与GenAI无缝交互的界面；提供清晰的提示指导以改善沟通；在人类与GenAI创造力之间取得平衡，保持透明度并强调互补角色。
+值得商榷之处：研究使用模拟GenAI平台（所有参与者看到同一图像），可能限制了外部效度。此外，研究主要关注积极赋权，未深入探讨GenAI可能带来的负面体验（如挫败感）。
+
+## 创新点
+1. 理论创新：提出了3C框架（协作、创造、沟通），作为理解人类-GenAI共创过程的新理论框架，整合了以往孤立探讨的方面。
+2. 理论创新：将消费者赋权概念化为一个过程而非静态结果，揭示了GenAI在赋权产生中的动态作用，填补了CGA文献的空白。
+3. 理论创新：发现了GenAI创造能力与消费者赋权之间的倒U型关系，挑战了线性正向关系的假设，深化了对人类中心主义视角下AI创造力威胁的理解。
+4. 方法创新：采用混合方法-扎根理论（MM-GT）方法，结合定性访谈和定量调查，系统开发并验证了3C构念的测量工具。
+5. 实践创新：为广告商提供了在CGA活动中有效整合GenAI工具同时确保人类中心主义方法的可操作见解。
+
+## 局限与展望
+- 局限性：
+（1）研究使用模拟GenAI平台，向所有参与者展示同一图像以减少混淆因素，但这可能限制了研究结果在真实GenAI工具（如ChatGPT、Midjourney）中的外部效度。
+（2）研究主要探讨了3C框架如何通过消费者赋权增强广告效果，未考察消费者对AI广告的信任等调节变量的作用。
+（3）研究聚焦于积极参与共创过程的消费者，未考察仅接触共创作品但不参与过程的观察者的视角。
+- 未来研究方向：
+（1）未来研究应将3C框架应用于不同的GenAI工具，探索不同用户控制程度和AI自主性平台之间的差异，并考察平台特定功能（如实时反馈）如何通过3C框架维度影响消费者赋权。
+（2）未来研究应考察消费者对AI广告的信任的调节作用，探索信任如何与3C框架维度交互以塑造广告效果，特别是人类主导协作、GenAI响应性和创造能力的有效性是否因消费者对AI技术的基线信任而异。
+（3）未来研究应探索观察者（不参与共创过程但接触共创作品）的视角，调查他们如何感知和回应共创内容，以提供对AI驱动广告更广泛影响的见解。此外，可将3C框架扩展到广告以外的营销情境（如AI辅助产品设计和品牌建设），探索消费者赋权如何影响不同共创环境中的参与和忠诚度。
+
+---
+## 相关概念
+- [[generative AI]]
+- [[consumer-generated advertising]]
+- [[co-creation]]
+- [[anthropocentrism]]
+- [[consumer empowerment]]
+
+---
+## 图表索引
+
+![[attachments/Consumer-empowerment-through-g_fig16.png]]
+
+![[attachments/Consumer-empowerment-through-g_fig17.png]]
+
+![[attachments/Consumer-empowerment-through-g_fig18.png]]
+
+![[attachments/Consumer-empowerment-through-g_fig19.png]]
+
+![[attachments/Consumer-empowerment-through-g_fig20.png]]

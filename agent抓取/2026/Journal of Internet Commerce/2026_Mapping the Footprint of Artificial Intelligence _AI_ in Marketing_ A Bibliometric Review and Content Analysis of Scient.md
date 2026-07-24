@@ -1,0 +1,111 @@
+---
+title: "Mapping the Footprint of Artificial Intelligence (AI) in Marketing: A Bibliometric Review and Content Analysis of Scientific Literature"
+authors: "Saji Thazhungal Govindan Nair（第一作者, 通讯作者）, Amal A."
+first_author: "Saji Thazhungal Govindan Nair"
+corresponding_author: "Saji Thazhungal Govindan Nair"
+year: 2026
+journal: "Journal of Internet Commerce"
+impact_factor: ""
+zone: ""
+doi: "10.1080/15332861.2026.2678335"
+keywords: "Artificial intelligence (AI); bibliometric analysis; Internet marketing"
+pdf: "C:/Users/LI-UF/Desktop/Claude/semi_autp_paper/新论文待处理/Mapping the Footprint of Artificial Intelligence (AI) in Marketing A Bibliometric Review and Content Analysis of Scientific Literature.pdf"
+reading_mode: ""
+reading_date: ""
+tags: [AI, marketing, Journal of Internet Commerce, bibliometric-analysis, internet-marketing]
+---
+
+## 研究背景与动机
+人工智能（AI）在营销领域的应用日益广泛，但现有研究存在严重碎片化：技术算法研究与消费者行为或战略方法研究之间存在显著差距。尽管AI在自动化和个性化方面的技术角色已有充分记录，但缺乏将这些技术与信任、忠诚度和战略决策联系起来的全面理论模型。此外，该领域严重依赖横截面方法论和以合规为中心的伦理视角，导致对AI对客户关系和品牌资产的长期影响理解有限，且缺乏前瞻性的伦理治理框架。这种技术进展与营销理论之间的脱节限制了可持续、负责任的创新。已有一些文献计量和系统综述探讨了AI在营销中的应用，但往往侧重于特定方面、狭窄的时间范围或有限的背景，且主要依赖定量映射而缺乏深入的定性综合。因此，有必要进行一项涵盖更广泛时期、区域和方法的系统性综合，以提供对AI驱动营销策略多样化影响的更平衡理解，并填补文献空白。
+
+## 研究问题
+本文提出五个研究问题（RQ）：
+RQ1. 该领域核心主题的知识结构、范围和实质意义是什么？
+RQ2. 最突出的贡献者（开创性著作、有影响力的作者、领先的机构/国家）是谁？
+RQ3. 概念和主题焦点如何随时间演变（关键术语和新兴主题的动态）？
+RQ4. 从引文网络中浮现出哪些知识扩散和学术辩论的模式？
+RQ5. 突出的研究空白和未来的学术探究轨迹是什么？
+
+理论框架：本文采用文献计量学方法，结合性能分析（performance analysis）和科学映射（science mapping）技术。核心构念包括：AI技术（如机器学习、自然语言处理、深度学习）、营销策略（如个性化、预测分析、自动化）、消费者行为（如信任、忠诚度、体验）以及伦理与隐私。这些构念之间的关系通过共引分析、关键词共现分析和主题分析来揭示。研究没有提出明确的假设，而是通过探索性分析来识别知识结构、主题集群和研究空白。
+
+## 变量汇总
+
+
+## 研究方法
+本研究采用文献计量分析（bibliometric analysis）方法，分为三个阶段：数据收集、数据可视化和报告。数据来源于Scopus数据库，检索时间为2025年7月。检索词为：("AI" OR "Artificial Intelligence" OR "Machine learning" OR "Deep learning" OR "Big data") AND ("Marketing" OR "Digital Marketing" OR "Internet Marketing" OR "Online Marketing" OR "Electronic Marketing")。初始检索获得14,093条记录，经过PRISMA流程筛选（包括文档类型、语言、学科领域和时间段限制），最终纳入1,878篇文献，时间跨度为2007年至2025年。分析方法包括性能分析（评估作者、机构、国家、期刊的产出和引文影响）和科学映射（使用共引分析、关键词共现网络和主题分析）。使用的软件包括R语言的Bibliometrix包（含Biblioshiny界面）和VOS Viewer。
+
+## 研究结果
+性能分析显示：
+- 样本包含1,878篇文献，来自616个来源，年增长率24.25%，文献平均年龄3.5年，平均每篇被引44.22次，参考文献总计108,063条。
+- 关键词：共有4,424个Keywords Plus和5,302个作者关键词。
+- 作者：4,873位作者，其中232位为独著作者，平均每篇文献3.26位合著者，国际合著比例为30.46%。
+- 发表趋势：2018年至2024年间增长显著，2024年达到368篇。2020-2025年期间发表了79.08%的文献（1,485篇）。
+- 国家/地区：美国贡献最多（755篇，平均被引58.70次），其次是中国（442篇，平均被引26.70次）、印度（257篇，平均被引23.60次）和英国（234篇，平均被引37.70次）。荷兰平均被引最高（107.30次）。
+- 期刊：Journal of Business Research（35篇，2,426次被引）、Journal of Retailing and Consumer Services（28篇，864次被引）、Industrial Marketing Management（27篇，1,085次被引）、Technological Forecasting and Social Change（27篇，743次被引）、Marketing Science（17篇，1,626次被引）。
+- 高被引文献：Erevelles, Fukawa, and Swayne (2016)（797次被引）、Davenport et al. (2020)（683次被引）、Dwivedi et al. (2021)（618次被引）。
+
+科学映射：
+- 关键词共现网络：识别出6个集群，包括：集群1（红色）：社交媒体、数据集、回归分析、互联网；集群2（绿色）：人类、文章、算法；集群3（蓝色）：旅游市场、旅游目的地、旅游发展、中国；集群4（紫色）：人工智能、机器学习、技术采纳、电子商务、零售、消费者行为、可持续性；集群5（桃色）：商业、大数据、数据分析、数据挖掘、行为研究、信息管理、决策支持系统、消费者行为、客户满意度、战略规划、营销策略；集群6（棕色）：情感分析、深度学习、学习系统、学习算法、决策树、预测。
+- 主题分析：主题图显示，右上象限（高中心性、高影响力）的主题包括人工智能、营销、商业和社交媒体；左上象限（低中心性、高影响力）包括旅游目的地、旅游发展和营销；右下象限（高中心性、低影响力）包括大数据、商业和营销；左下象限（低中心性、低影响力）包括人工智能、消费行为和营销。
+- 共引分析：识别出7个集群：集群1：大数据分析在商业绩效和战略管理中的应用；集群2：营销分析与技术转型；集群3：人工智能与营销分析；集群4：人工智能与消费者行为；集群5：消费者对AI技术的视角；集群6：数字技术、视觉内容与旅游营销；集群7：聊天机器人交互与客户体验。
+
+定性综合：对前50篇文献的定性综合揭示了多个主题，包括AI驱动的战略框架、高级营销分析、文本挖掘与用户生成内容、AI个性化与客户画像、特定领域应用（如酒店旅游）、社交媒体与虚拟影响者、伦理与隐私、B2B营销、以及对话式AI。
+
+核心发现：
+1. AI在营销领域的研究自2018年以来快速增长，美国和中国是主要贡献者。
+2. 研究主题集中在AI驱动的战略框架、高级分析、消费者行为、伦理和特定领域应用。
+3. 存在关键研究空白：缺乏将AI技术与消费者行为结果联系起来的综合理论模型；缺乏纵向研究；伦理研究以合规为主，缺乏前瞻性治理框架；B2B和跨文化研究不足。
+
+## 讨论与结论
+作者将结果解释为：AI在营销领域的研究正在快速增长，但存在碎片化问题。研究主题从技术应用（如预测分析、个性化）扩展到消费者体验和伦理问题。作者指出，现有研究缺乏将AI技术进步与消费者行为理论联系起来的综合框架，并呼吁发展“AI增强消费者决策”（AI-augmented consumer decision making）的统一理论。理论含义包括：需要整合机器学习效率、心理信任机制和伦理边界的理论模型；缺乏纵向研究为关系营销理论发展提供了机会。实践含义包括：企业需要跨职能合作（营销、数据科学、法律）以确保合规和个性化；新兴市场存在未开发的潜力；从业者应优先投资于高影响力领域（如实时边缘计算、聊天机器人共情训练）。作者还提出了一个结构化框架来指导未来研究。
+
+## 创新点
+1. 理论创新：通过文献计量和定性综合，提出了一个结构化框架，阐明了AI驱动营销研究的跨学科性质，并识别了技术AI进步与消费者中心营销理论之间的差距，呼吁发展“AI增强消费者决策”的统一理论。
+2. 方法创新：采用了两阶段“关键综合”（critical synthesis）方法：先进行文献计量映射以识别结构模式，再进行基于理论的定性解释，超越了单纯的描述性列举。
+3. 实践创新：为从业者和政策制定者提供了可操作的见解，包括跨职能合作、新兴市场机会和投资优先领域。
+
+## 局限与展望
+- 局限性：
+（1）采用了特定的纳入和排除标准，可能无意中排除了某些有价值的视角。
+（2）仅使用Scopus数据库，虽然覆盖广泛，但可能遗漏了Web of Science和Google Scholar等数据库中的相关文献，尤其是来自小型或区域性期刊的贡献，可能导致地理和文化偏见。
+（3）现有文献主要集中在零售和电子商务领域，对多行业部门的研究不足。
+- 未来研究方向：
+（1）开发和测试AI在营销中实施的适应性战略框架，并研究人机混合团队的新组织结构和关键绩效指标。
+（2）将可解释AI（XAI）和因果AI模型整合到营销研究背景中，以提高透明度和战略价值；创建审计AI系统偏见、准确性和公平性的方法。
+（3）超越合规性，研究伦理AI设计原则和治理模型；考察消费者对AI真实性的看法，特别是虚拟影响者和合成内容；研究AI对市场动态、消费者福利和整个营销生态系统的宏观影响。
+（4）研究人类-AI交互在决策科学中的动态，以更好地阐明最佳协作伙伴关系。
+（5）开展B2B特定研究，探讨AI对销售预测、基于客户的营销和多利益相关者旅程管理的影响；研究AI在实现营销可持续目标和个性化社会影响信息中的作用；鼓励跨学科/灵活的研究，整合计算机科学、伦理学、心理学和营销学。
+（6）进行跨行业和纵向研究，探索AI驱动营销策略在更长时间框架内的影响。
+
+---
+## 相关概念
+- [[AI]]
+- [[bibliometric analysis]]
+- [[internet marketing]]
+
+---
+## 图表索引
+
+![[attachments/Mapping the Footprint of Artif_fig1.png]]
+
+![[attachments/Mapping the Footprint of Artif_fig2.png]]
+
+![[attachments/Mapping the Footprint of Artif_fig3.png]]
+
+![[attachments/Mapping the Footprint of Artif_fig4.png]]
+
+![[attachments/Mapping the Footprint of Artif_fig5.png]]
+
+![[attachments/Mapping the Footprint of Artif_fig6.png]]
+
+![[attachments/Mapping the Footprint of Artif_fig7.png]]
+
+![[attachments/Mapping the Footprint of Artif_fig8.png]]
+
+![[attachments/Mapping the Footprint of Artif_fig9.png]]
+
+![[attachments/Mapping the Footprint of Artif_fig10.png]]
+
+![[attachments/Mapping the Footprint of Artif_fig11.png]]
+
+![[attachments/Mapping the Footprint of Artif_fig12.png]]

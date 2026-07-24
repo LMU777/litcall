@@ -1,0 +1,125 @@
+---
+title: "Artificial and misfit: The sincerity challenge of AI influencers in social advocacy"
+authors: "Weilu Zhang（第一作者）, Hanyoung Kim, Mengtian Jiang（通讯作者）"
+first_author: "Weilu Zhang"
+corresponding_author: "Mengtian Jiang"
+year: 2026
+journal: "Journal of Marketing Communications"
+impact_factor: "9.0"
+zone: ""
+doi: "10.1080/13527266.2026.2704128"
+keywords: "artificial intelligence; virtual influencer; issue-influencer fit; social advocacy; racial issues; sincerity"
+pdf: "C:/Users/LI-UF/Zotero/storage/UCKW88B3/Artificial and misfit The sincerity challenge of AI influencers in social advocacy.pdf"
+reading_mode: ""
+reading_date: ""
+tags: [AI, marketing, Journal of Marketing Communica, virtual-influencer, issue-influencer-fit, social-advocacy, racial-issues]
+---
+
+## 研究背景与动机
+AI influencers（人工智能影响者）是数字角色，旨在模仿人类外貌、行为和叙事，其设计灵活性使品牌能够跨越性别、种族和文化子群体创建身份，从而在营销领域日益受到关注。然而，当AI influencers参与社会倡导（如种族正义）时，引发了伦理担忧，消费者可能将这些努力视为表演性的“diversity-washing”（多样性洗白）。现有研究主要关注AI influencers在商业背景下的效果，对其在价值驱动的社会倡导（尤其是种族议题）中的作用探讨有限，且存在方法论不一致（如混合使用非等效的真实影响者配对来标记相同图像）。本文旨在填补这一空白，通过引入issue-influencer fit（议题-影响者匹配度）作为核心心理机制，基于match-up hypothesis（匹配假说）和associative learning theory（联想学习理论），系统考察influencer type（影响者类型：AI vs. 人类）和race（种族：黑人 vs. 白人）如何影响消费者对种族议题倡导的反应。
+
+## 研究问题
+本文提出四个假设（H1-H4），并构建了一个研究模型（Figure 1）。核心构念包括：influencer type（自变量）、influencer race（调节变量）、issue-influencer fit（中介变量）、sincerity（中介变量/因变量）、issue involvement（调节变量）、attitudes toward the influencer（因变量）。理论框架基于match-up hypothesis和schema congruity theory（图式一致性理论）。
+
+H1: AI influencers (vs. human influencers) are perceived as less sincere due to lower perceived issue-influencer fit for racial issues. 推导逻辑：AI influencers缺乏生活经验和情感深度，与基于生活经验的种族议题倡导存在根本性不匹配（low fit），这种不一致会触发消费者将倡导归因于外部动机（如表演性），从而降低感知真诚度。
+
+H2: Influencer race moderates the negative indirect effect of AI (vs. human) influencer racial advocacy on perceived sincerity through issue-influencer fit. Specifically, the difference in perceived issue-influencer fit between AI and human influencers is expected to be larger when the influencer is Black than when the influencer is White. 推导逻辑：黑人人类影响者同时具备表面种族一致性和生活经验合法性，而黑人AI影响者仅具备表面一致性，因此AI与人类之间的匹配度差距在黑人影响者中更大；白人人类影响者虽缺乏种族经验但共享人性，白人AI影响者则两者皆缺，差距较小。
+
+H3: Issue involvement moderates the effect of issue-influencer fit on sincerity. Specifically, the effect of issue-influencer fit on influencer sincerity is stronger for people with higher issue involvement than lower. 推导逻辑：高卷入度的消费者会进行更精细的系统性加工，更依赖匹配度作为诊断性线索来推断真诚度；低卷入度消费者则依赖启发式加工，匹配度的影响较弱。
+
+H4: The moderation effect of issue-influencer fit on perceived influencer sincerity leads to positive attitudes towards the influencer. 推导逻辑：真诚度作为突出的来源特质，会塑造消费者判断并强化信任，从而形成更积极的态度。
+
+## 变量汇总
+- Issue-influencer fit（议题-影响者匹配度）：中介变量。定义为消费者感知的影响者身份与所倡导议题之间的兼容性。采用五题项七点李克特量表（α = .96 [Study 1], α = .97 [Study 2], α = .97 [Study 3]），改编自Lim and Young (2021)、Nan and Heo (2007)、Simmons and Becker-Olsen (2006)。
+- Perceived influencer sincerity（感知影响者真诚度）：中介变量/因变量。定义为影响者被感知为诚实、真实、 wholesome、脚踏实地、真诚的程度。采用四题项七点李克特量表（α = .95 [Study 1], α = .97 [Study 2], α = .95 [Study 3]），来自J. A. Lee and Eastin (2021)。
+- Issue involvement（议题卷入度）：调节变量。定义为个人对议题感知的相关性或重要性。采用五题项七点李克特量表（α = .98 [Study 3]），来自Zaichkowsky (1986)。
+- Attitude toward the influencer（对影响者的态度）：因变量。采用六题项七点量表（α = .98 [Study 3]），来自V. L. Thomas and Fowler (2021)。
+- Influencer type（影响者类型）：自变量（二分变量：人类 vs. AI）。在Study 1和Study 3中通过文本描述操纵；在Study 2中通过参与者对AI生成图像的感知测量（人类/AI/不确定）。
+- Influencer race（影响者种族）：调节变量（二分变量：黑人 vs. 白人）。在Study 2中通过12张AI生成照片（每种族6张）操纵；在Study 3中通过一对男性影响者图像（黑人和白人）操纵。
+- Political orientation（政治倾向）：控制变量。采用11点量表（1=左，11=右）。
+
+## 研究方法
+本文通过三项实验研究检验假设。所有研究均获得作者所在机构伦理审查委员会批准（IRB #84849）。
+
+Study 1：采用单因素（influencer type: human vs. AI）被试间实验设计。通过Prolific招募103名美国参与者（46.6%女性；53.4%白人；Mage=33.81, SDage=10.34），均为18岁以上活跃Instagram用户。使用平行叙事场景操纵影响者类型，明确提及影响者自主性。操纵检查通过多项选择题进行，准确率超过90%。参与者阅读场景后，完成issue-influencer fit和sincerity量表。使用PROCESS Macro Model 4进行中介分析。
+
+Study 2：采用2（influencer race: Black vs. White）× 3（perceived influencer type: human vs. AI vs. unsure）设计，其中种族为操纵变量，感知类型为测量变量。通过Prolific招募359名美国Instagram用户（47.1%女性；Mage=37.68, SDage=12.14）。使用Midjourney生成12张影响者照片（每种族6张，变化性别和外观）。参与者随机观看一张照片，被告知该影响者倡导种族正义，然后测量感知类型、issue-influencer fit、sincerity等。使用R 4.5.2进行多层次模型和标准线性回归，通过mediation包（5000次bootstrap）进行中介分析。
+
+Study 3：采用2（influencer type: AI vs. human）× 2（influencer race: White vs. Black）被试间设计。通过Prolific招募402名美国Instagram用户（50%男性；Mage=38.64, SDage=13.29）。创建虚构影响者Alex及其模拟Instagram帖子。影响者类型通过文本介绍操纵（人类 vs. AI），种族通过一对男性图像操纵（黑人和白人）。帖子文案描述Alex参加Juneteenth游行并倡导种族代表性。参与者阅读介绍、查看帖子后，完成attitude toward the influencer、issue-influencer fit、sincerity、issue involvement等量表。使用R 4.5.2进行结构方程模型（SEM）分析，采用稳健最大似然估计（MLR），通过正交化交互项检验调节效应，使用5000次bootstrap检验序列中介模型。
+
+## 研究结果
+描述性统计：各研究变量均值与标准差见原文附录B。
+
+H1（AI vs. 人类影响者通过匹配度影响真诚度）：支持。
+- Study 1：间接效应 = -0.48, SE = 0.20, 95%CI [-0.88, -0.10]。AI影响者与更低匹配度相关（b = -0.72, SE = 0.29, t(101) = -2.49, p < .05），匹配度与真诚度正相关（b = 0.67, SE = 0.07, t(100) = 9.20, p < .001）。
+- Study 2：感知为AI（b = -0.78, SE = 0.18, p < .001）或不确定（b = -0.82, SE = 0.19, p < .001）与更低匹配度相关；匹配度与真诚度正相关（b = 0.69, SE = 0.34, p < .001）。中介效应 = -0.32, 95%CI [-0.546, -0.135]。
+- Study 3：AI影响者（β = -0.16, p < .05）与更低匹配度相关；匹配度与真诚度正相关（β = 0.79, p < .001）。中介效应 = -0.43, SE = 0.18, 95%CI [-0.823, -0.080]。
+
+H2（种族调节类型对匹配度的间接效应）：不支持。
+- Study 2：类型（AI）与种族的交互项不显著（b = 0.33, SE = 0.34, ns.）。
+- Study 3：类型与种族的交互项不显著（β = -0.05, p > .05）。
+
+H3（议题卷入度调节匹配度对真诚度的影响）：支持。
+- Study 3：匹配度与卷入度的交互项显著（β = 0.11, p < .05）。高卷入度（+1 SD）时匹配度对真诚度的效应更强（b = 1.44），低卷入度（-1 SD）时较弱（b = 1.07）。
+
+H4（调节效应通过真诚度影响态度）：支持。
+- Study 3：真诚度与态度正相关（β = 0.84, p < .001）。序列中介模型显著：类型对态度的总间接效应 = -0.42, SE = 0.18, 95%CI [-0.785, -0.077]；种族对态度的总间接效应 = -0.58, SE = 0.17, 95%CI [-0.933, -0.258]；匹配度×卷入度对态度的间接效应 = 0.18, SE = 0.05, 95%CI [0.085, 0.278]。
+
+核心发现：
+1. AI影响者在种族议题倡导中始终被感知为比人类影响者更不真诚，这一效应由较低的议题-影响者匹配度中介。
+2. 影响者种族（黑人 vs. 白人）不调节类型对匹配度的间接效应，但种族本身对匹配度有直接主效应（黑人影响者匹配度更高）。
+3. 议题卷入度调节匹配度对真诚度的影响：高卷入度消费者更依赖匹配度推断真诚度。
+4. 真诚度及其前因显著预测对影响者的整体态度。
+
+## 讨论与结论
+作者将核心结果解释为：AI影响者在种族议题倡导中感知真诚度较低，并非源于其人工本质的内在缺陷，而是由于议题-影响者匹配度的缺失。这一发现与match-up hypothesis和schema congruity theory一致，并扩展了AI影响者文献至非商业倡导领域。与已有文献的关系：与Liu and Lee (2024)和J. Yang et al. (2023)一致，AI影响者被认为与种族议题匹配度较低；但与Ferraro et al. (2024)和E. Kim (2024)中AI影响者在某些倡导情境中可能有效的发现形成对比，表明身份相关议题是AI影响者有效性的边界条件。
+
+理论含义：①识别出issue-influencer fit作为核心机制，将AI影响者说服力较低归因于情境错位而非内在缺陷；②聚焦sincerity，超越authenticity和trustworthiness，捕捉消费者对倡导来源动机的判断；③扩展match-up hypothesis，发现issue involvement是匹配度效应的边界条件。
+
+实践含义：①品牌在身份相关或价值驱动的倡导中使用AI影响者需谨慎，种族线索（如深色皮肤）可独立提升匹配度和真诚度，但无法弥补与人类影响者的真诚度差距；②有效倡导取决于影响者身份与议题的感知一致性，高卷入度受众对不一致更敏感；③品牌可考虑将AI影响者定位在与机器身份相关的议题领域（如技术素养、算法公平），以增强真实性。
+
+值得商榷之处：作者将种族作为调节变量的假设（H2）未被支持，但将其解释为“AI真诚度折扣”效应——人工性可能掩盖种族一致性的潜在益处。这一解释虽合理，但缺乏直接检验。此外，研究依赖虚构影响者和一次性曝光，可能低估了真实影响者通过长期互动建立的真诚度。
+
+## 创新点
+- 理论创新：首次将issue-influencer fit作为核心机制引入AI影响者研究，解释其在种族议题倡导中的真诚度挑战，并识别出issue involvement作为边界条件。
+- 理论创新：聚焦sincerity（真诚度）而非广泛研究的authenticity或trustworthiness，更精准地捕捉消费者对倡导来源动机的判断。
+- 方法创新：使用生成式AI工具（Midjourney, ChatGPT）创建多样化、可控的刺激材料，提供可复制、可扩展的方法框架，克服了以往研究依赖单一AI影响者（多为女性、时尚导向）的局限。
+- 实践创新：揭示AI影响者在身份相关倡导中的“真诚度折扣”效应，为品牌提供战略指导，建议避免将AI影响者设计简化为“打勾式”多样性，并探索与机器身份匹配的议题领域。
+
+## 局限与展望
+- 局限性：
+（1）研究依赖虚构影响者而非真实人物，可能降低生态效度，因为真实影响者通过重复互动建立可信度，一次性设计也阻止了准社会关系的形成。
+（2）研究假设消费者对AI影响者赋予一定程度的感知能动性，但参与者对AI影响者是否具备真实体验、意图或道德能动性的感知可能存在差异，这些差异可能影响匹配度和真诚度评价。
+（3）研究聚焦于种族倡导这一高度身份相关、政治敏感且道德负载的议题领域，发现可能无法推广到其他亲社会倡导（如环保、心理健康、性别平等），这些议题在政治极化、身份相关性和来源合法性期望上可能不同。
+（4）研究仅关注issue involvement作为调节变量，未探索其他可能增强匹配度的情境或设计变量。
+
+- 未来研究方向：
+（1）未来研究应采用纵向或实地设计，以更好地捕捉真实世界影响者动态，包括准社会关系的发展。
+（2）未来研究应直接测量感知AI影响者能动性，以更好地理解消费者如何解读AI生成来源的体验性主张和社会倡导。
+（3）未来研究应检验这些效应是否扩展到不同敏感度的倡导情境，特别是与机器身份良好匹配的议题（如技术素养、算法公平），以探究AI影响者何时能成为有效倡导者。
+（4）未来研究应探索额外的情境或设计变量（如叙事风格、平台环境、AI角色定制），这些因素可能增强感知匹配度，为从业者提供更可操作的指导。
+（5）（补充）未来研究可进一步检验种族与类型交互效应不显著的原因，例如通过操纵AI影响者的“生活经验”叙事（如声称拥有模拟体验）来测试“AI真诚度折扣”的边界。
+
+---
+## 相关概念
+- [[AI]]
+- [[virtual influencer]]
+- [[issue-influencer fit]]
+- [[social advocacy]]
+- [[racial issues]]
+- [[sincerity]]
+
+---
+## 图表索引
+
+![[attachments/Artificial and misfit The sinc_fig13.png]]
+
+![[attachments/Artificial and misfit The sinc_fig14.png]]
+
+![[attachments/Artificial and misfit The sinc_fig15.png]]
+
+![[attachments/Artificial and misfit The sinc_fig16.png]]
+
+![[attachments/Artificial and misfit The sinc_fig17.png]]
+
+![[attachments/Artificial and misfit The sinc_fig18.png]]

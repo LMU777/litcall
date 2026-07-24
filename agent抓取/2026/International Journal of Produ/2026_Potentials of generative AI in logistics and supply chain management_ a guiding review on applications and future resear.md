@@ -1,0 +1,101 @@
+---
+title: "Potentials of generative AI in logistics and supply chain management: a guiding review on applications and future research directions"
+authors: "Subrata Panja（第一作者）, Ting Zheng, Christoph H. Glock（通讯作者）"
+first_author: "Subrata Panja"
+corresponding_author: "Christoph H. Glock"
+year: 2026
+journal: "International Journal of Production Research"
+impact_factor: ""
+zone: ""
+doi: "10.1080/00207543.2026.2680586"
+keywords: "generative artificial intelligence; artificial intelligence; logistics; supply chain management; generative models; digital transformation"
+pdf: "C:/Users/LI-UF/Zotero/storage/4MRCKRRU/Potentials of generative AI in logistics and supply chain management a guiding review on applications and future research directions.pdf"
+reading_mode: ""
+reading_date: ""
+tags: [AI, marketing, International Journal of Produ, generative-AI, logistics, supply-chain-management, generative-models]
+---
+
+## 研究背景与动机
+生成式人工智能（GenAI）正在成为物流与供应链管理（LSCM）中的变革性技术，其功能超越了传统AI方法，能够生成合成数据、模拟场景和提供决策支持。传统判别式AI模型（如逻辑回归、决策树、支持向量机）主要设计用于分类任务（如预测延迟或识别异常），限制了其在更广泛的LSCM问题（如场景生成、需求预测、实时决策支持）中的应用。GenAI通过生成合成数据，有助于在动态和不确定的市场条件下改进决策。尽管已有研究从不同角度探讨了GenAI在供应链管理中的应用，但存在两个主要研究空白：第一，早期综述未涵盖所有可用的GenAI技术，而是集中于特定类型（如LLMs或ChatGPT）；第二，它们未能提供关于GenAI能力如何支持LSCM各职能领域决策的整体视角。因此，本文旨在通过系统文献综述，全面分析GenAI在LSCM中的应用，并开发一个概念框架来整合GenAI技术、能力与LSCM职能。
+
+## 研究问题
+本文提出两个研究问题：
+- RQ1: GenAI在LSCM中的关键应用领域是什么？不同的GenAI技术及其相关能力如何贡献于这些应用？
+- RQ2: GenAI在LSCM中使用的含义和未来研究机会是什么？
+
+理论框架：本文开发了一个概念框架，整合了三个要素：GenAI技术（GANs、VAEs、Transformers）、GenAI能力（学习、预测、适应、感知、协作、推理）和LSCM职能（预测、仓库管理、库存管理、运输、供应链风险管理、可持续供应链管理、供应链自动化、GenAI驱动的供应链转型）。框架通过二维矩阵将GenAI技术与LSCM职能任务映射，并识别能力-任务对齐的模式。框架可链接到资源基础观（RBV）和动态能力视角，将GenAI能力视为互补性战略资源。
+
+## 变量汇总
+
+
+## 研究方法
+本文采用基于PRISMA的系统文献综述方法。文献检索过程包括四个步骤：（1）关键词识别：确定两组关键词，第一组涉及GenAI技术（如'generative artificial intelligence', 'LLM*', 'generative adversarial network*', 'ChatGPT', 'VAE*', 'transformer model*'），第二组涉及LSCM应用背景（如logistics, transportation, 'demand forecast*', 'supply chain', inventory, warehous*等），使用布尔运算符'AND'组合。（2）数据库检索：在Scopus和Web of Science两个学术数据库中进行检索，检索截至2024年12月发表的论文，仅包括英文同行评审期刊和会议论文。初始检索获得Scopus 1791篇、WoS 1121篇，去重后共2083篇。（3）文献筛选：三位研究者独立检查标题、摘要、关键词和发表渠道，排除不符合标准的论文。排除标准包括：未聚焦LSCM背景（n=1945）、未聚焦GenAI概念（n=50）、使用GenAI但未展示其在LSCM背景下的生成潜力（n=12）。最终通过全文阅读和系统编码，识别出三个主要主题：GenAI技术、GenAI能力、LSCM职能及具体任务。（4）补充滚雪球抽样：分析已纳入论文的参考文献和引文，额外识别3篇相关研究，最终样本为43篇论文。编码维度包括：GenAI模型类型、生成功能类型、输入数据类型、输出数据类型、数据来源、对特定LSCM任务的影响、GenAI与LSCM的关联、GenAI对运营效率的影响。所有研究者独立编码子集，通过讨论达成共识。
+
+## 研究结果
+描述性分析：43篇论文中，超过90%发表于2023-2024年，反映学术关注度显著提升。发表渠道以计算机科学和工程领域为主。研究方法以定量为主（33/43篇），其中模拟研究占主导。应用领域方面，预测（9篇）最常见，其次是供应链风险管理（6篇）和GenAI驱动的供应链转型（6篇），运输、可持续供应链管理和供应链自动化相对较少。
+
+按LSCM职能分类的结果：
+1. 预测（9篇）：GANs和VAEs用于学习数据分布生成合成数据，改进预测（如短期销售预测、医疗供应链需求预测、缺货预测）。GAN/VAE模型在AUC上比传统机器学习基线提升约2%。Transformer模型（如BERT）通过新闻情感分析支持药品需求预测，准确率约83%。
+2. 仓库管理：GANs用于图像去噪和增强（如包裹检测），VAEs用于生成无人机/无人车轨迹（计算时间降低约23%）。GANs在3D装箱问题中平均减少约9.1%的箱数和9.7%的计算时间。ChatGPT在存储分配策略中约87%的情况下表现不如专家策略。
+3. 库存管理：GANs和VAEs用于检测数据不一致、重建缺失信息、异常检测。GANs在推理准确率上比基线方法提升9.1%-14.8%。GPT-3 Codex可将自然语言描述转换为可执行的Python模拟代码。
+4. 运输：仅Transformer模型被应用，ChatGPT可生成可行路线但性能未超过既定方法（如比率指数法）。
+5. 供应链风险管理：Transformer模型（BERT、GPT-3.5-turbo等）用于从新闻中提取风险事件、风险标签、构建贝叶斯网络。sentence-t5-base在风险标签准确率上表现最佳。
+6. 可持续供应链管理：GANs在物流和运输数据上比LSTM基线减少约21%-45%的预测误差。GAN框架使吞吐量提升93.8%，延迟降低57.9%。ChatGPT作为协作决策支持工具可识别环境友好策略。
+7. 供应链自动化：GANs用于知识图谱构建中的实体识别和标签预测。GPT-3.5和GPT-4.0用于将自然语言转换为Cypher查询，GPT-4.0在上下文提示下查询准确率最高。
+8. GenAI驱动的供应链转型：调查研究表明GenAI使用与供应链绩效正相关，供应链协调起中介作用。GenAI通过学习和推理能力支持探索性创新，通过协作和适应能力强化利用性创新。
+
+核心发现：
+1. GenAI在LSCM中的应用集中于预测、库存控制和风险管理，而运输、可持续供应链管理和自动化领域探索不足。
+2. GANs和VAEs在数据稀缺和类别不平衡场景中表现优越，Transformers在文本语义理解和复杂依赖建模中占优。
+3. 模拟研究占主导，实证现场研究稀缺，限制了外部有效性。
+4. GenAI能力与任务需求的匹配是有效应用的关键。
+5. 人类-AI协作在解释、验证和优化GenAI输出中不可或缺。
+
+## 讨论与结论
+作者对核心结果的解释：GenAI技术在LSCM中的应用潜力巨大，但研究分布不均。GANs和VAEs擅长从数据分布中学习并生成合成数据，适用于预测和异常检测；Transformers在文本理解和语义推理方面优势明显，适用于风险管理和自动化。作者认为，GenAI能力与任务需求的匹配是决定应用效果的关键因素。与已有文献的关系：本文扩展了早期综述的范围，涵盖了所有GenAI技术而非仅LLMs或ChatGPT，并提供了整体视角。理论含义：通过能力视角，本文推进了LSCM研究，明确了GenAI在分类之外的价值创造机制，并提出了方法-能力-情境匹配和人类-AI互补性的未来研究方向。实践含义：框架可作为从业者参考，指导其在规划与预测、自动化与优化、人机交互三个方面的GenAI应用。值得商榷之处：作者指出部分纳入论文在方法透明度和可重复性上未达到最高标准，这可能反映了该领域的早期发展阶段。
+
+## 创新点
+1. 理论创新：从能力中心视角审视GenAI在LSCM中的应用，将六种GenAI能力（学习、预测、适应、感知、协作、推理）映射到核心LSCM职能，揭示了能力-任务对齐的模式。
+2. 方法创新：开发了一个概念框架，通过二维矩阵整合GenAI技术、能力和LSCM职能，为系统分析现有研究和识别未来机会提供了结构化工具。
+3. 实践创新：为从业者提供了基于数据特征和运营目标的GenAI技术选择指南（如GANs/VAEs适用于数值/视觉数据稀缺场景，Transformers适用于文本密集型任务）。
+
+## 局限与展望
+- 局限性：
+（1）研究结果受文献检索范围、纳入标准和数据库选择的影响，不同策略可能产生不同样本。作者通过滚雪球搜索部分缓解了此问题。
+（2）分类框架的开发和论文分配到特定GenAI技术和LSCM领域涉及作者判断，尽管有透明标准和团队共识，但可能存在替代解释。
+（3）LSCM职能定义聚焦于核心运营职能，排除了战略和管理性职能（如营销、财务），这可能限制了框架的全面性。
+（4）纳入论文数量有限（43篇），主要由于严格的纳入标准和GenAI在该领域的新兴性质。
+- 未来研究方向：
+（1）探索VAEs在异常检测、供应链规划、风险管理、可持续供应链设计中的应用，因为目前VAEs在这些领域尚未被充分研究。
+（2）将GANs应用于运输管理中的复杂物流网络模拟，如生成合成货运流或响应动态网络结构变化。
+（3）将Transformers应用于可持续供应链管理，如结合图像生成技术（DALL-E）和机器人技术实现可持续定制服装生产。
+（4）加强实证验证，通过案例研究、现场实验和试点实施，提升GenAI方法的实际相关性和外部有效性。
+（5）增加定性研究（如访谈、案例研究），从社会技术视角理解用户动机、体验和决策行为。
+（6）探索GenAI与物联网、数字孪生、区块链等技术的集成，以增强复杂异构LSCM数据的管理。
+（7）研究GenAI如何嵌入现有管理系统（如WMS、ERP）以增强决策能力。
+（8）探索GenAI与机器人集成，通过生成合成训练数据或虚拟环境任务模拟加速机器人部署。
+（9）未来研究应保持对方法清晰度、验证和可重复性的承诺，以确保领域在坚实基础上成熟。
+
+---
+## 相关概念
+- [[generative AI]]
+- [[AI]]
+- [[logistics]]
+- [[supply chain management]]
+- [[generative models]]
+- [[digital transformation]]
+
+---
+## 图表索引
+
+![[attachments/Potentials of generative AI in_fig13.png]]
+
+![[attachments/Potentials of generative AI in_fig14.png]]
+
+![[attachments/Potentials of generative AI in_fig15.png]]
+
+![[attachments/Potentials of generative AI in_fig16.png]]
+
+![[attachments/Potentials of generative AI in_fig17.png]]
+
+![[attachments/Potentials of generative AI in_fig18.png]]

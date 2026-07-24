@@ -1,0 +1,69 @@
+{
+  "_说明": {
+    "zotero_api_key_权限": "Zotero API Key 必须在 zotero.org/settings/keys 创建时勾选「Allow write access」和「Allow library access」，否则会出现 403 错误。",
+    "journal_whitelist_extra": "在此数组中添加你需要的期刊名称，会与硬编码的 60+ 白名单合并。大小写不敏感。",
+    "deepseek_api_key": "从 platform.deepseek.com → API Keys 获取。必填——深度阅读和问答的核心引擎。",
+    "gemini_api_key": "从 aistudio.google.com 获取。用于深度阅读时识别论文图表。免费额度 1500次/天。可选，不填则跳过图表分析。",
+    "help_email": "SPIS 文献求助用的接收邮箱。必填——影响无下载链接论文的自动求助功能。"
+  },
+  "keywords": {
+    "broad": [
+      "\"AI\" AND \"marketing\"",
+      "\"artificial intelligence\" AND \"consumer behavior\"",
+      "\"machine learning\" AND \"marketing strategy\"",
+      "\"generative AI\" AND \"marketing\""
+    ],
+    "narrow": [
+      "\"large language model\" AND \"consumer trust\"",
+      "\"AI\" AND \"recommendation\" AND \"product evaluation\"",
+      "\"chatbot\" AND \"customer engagement\" AND \"satisfaction\"",
+      "\"algorithmic personalization\" AND \"consumer response\"",
+      "\"generative AI\" AND \"advertising\" AND \"persuasion\"",
+      "\"virtual influencer\" AND \"brand attitude\"",
+      "\"machine learning\" AND \"dynamic pricing\" AND \"fairness\"",
+      "\"natural language processing\" AND \"sentiment\" AND \"marketing\"",
+      "\"AI ethics\" AND \"transparency\" AND \"marketing\"",
+      "\"voice assistant\" AND \"shopping behavior\""
+    ],
+    "chinese": [
+      "人工智能 营销",
+      "AI 消费者 信任",
+      "生成式AI 营销",
+      "大语言模型 消费者",
+      "聊天机器人 顾客 体验",
+      "算法推荐 消费者 行为",
+      "虚拟人 品牌",
+      "机器学习 消费者 洞察",
+      "人机协同 营销",
+      "AI 伦理 营销"
+    ]
+  },
+  "journal_whitelist_extra": [],
+  "confirm_zotero_sync": true,
+  "min_year": 2023,
+  "_keyword_cursor": {
+    "category_index": 0,
+    "keyword_index": 0,
+    "last_updated": ""
+  },
+  "advanced_search_defaults": {
+    "year_start": 2025,
+    "year_end": 2026,
+    "target_papers": 5,
+    "max_pages_per_keyword": 10,
+    "journal_filter": []
+  },
+  "zotero": {
+    "user_id": "YOUR_ZOTERO_USER_ID",
+    "api_key": "YOUR_ZOTERO_API_KEY",
+    "collection_name": "agent抓取",
+    "zotero_data_dir": "C:\\Users\\YOUR_NAME\\Zotero"
+  },
+  "unpaywall_email": "your_email@example.com",
+  "help_email": "your_email@example.com",
+  "ollama_model": "qwen2.5:7b",
+  "ollama_base_url": "http://localhost:11434",
+  "deepseek_api_key": "sk-YOUR_DEEPSEEK_API_KEY",
+  "deepseek_model": "deepseek-chat",
+  "gemini_api_key": "AIza...YOUR_GEMINI_API_KEY"
+}

@@ -1,0 +1,5 @@
+[client]
+toolbarMode = "viewer"
+
+[server]
+runOnSave = false
