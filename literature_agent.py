@@ -2930,16 +2930,22 @@ async def get_impact_factor_async(journal: str) -> str:
 # AI 笔记生成
 # ============================================================================
 def extract_text_from_pdf(pdf_path: Path) -> str:
+    doc = None
     try:
         doc = fitz.open(pdf_path)
         text = ""
         for page in doc:
             text += page.get_text()
-        doc.close()
         return text
     except Exception as e:
         logger.error(f"提取 PDF 文本失败: {e}")
         return ""
+    finally:
+        if doc is not None:
+            try:
+                doc.close()
+            except Exception:
+                pass
 
 
 async def generate_notes(text: str) -> Optional[Dict[str, str]]:
@@ -3488,6 +3494,7 @@ async def _recognize_figures_structured(pdf_path: Path, gemini_api_key: str) -> 
         logger.warning("Gemini API Key 未配置，跳过识图")
         return result
 
+    doc = None
     try:
         client = genai.Client(api_key=gemini_api_key)
         doc = fitz_module.open(pdf_path)
@@ -3495,50 +3502,51 @@ async def _recognize_figures_structured(pdf_path: Path, gemini_api_key: str) -> 
         logger.warning(f"Gemini 初始化失败: {e}")
         return result
 
-    # ── 智能预扫描：文本检测 Figure/Table 标题 ──
-    # 比 PyMuPDF 图片检测更准：矢量图、表格都能覆盖，不依赖嵌入图片
-    MAX_PAGES_TO_SCAN = 3
+    try:
+        # ── 智能预扫描：文本检测 Figure/Table 标题 ──
+        # 比 PyMuPDF 图片检测更准：矢量图、表格都能覆盖，不依赖嵌入图片
+        MAX_PAGES_TO_SCAN = 3
 
-    # 图表标题正则（中英文）
-    FIGURE_CAPTION_RE = re.compile(
-        r'(?:Figure|Fig\.?|Table|FIGURE|FIG\.?|TABLE)\s*[A-Z]?\d+'  # Fig. 1, Figure S1, Table A2
-        r'|图\s*\d+|表\s*\d+'                                          # 中文图表
-        r'|(?:Figure|Fig\.?|Table)\s*[IVX]+',                          # 罗马数字 Table IV
-        re.IGNORECASE,
-    )
+        # 图表标题正则（中英文）
+        FIGURE_CAPTION_RE = re.compile(
+            r'(?:Figure|Fig\.?|Table|FIGURE|FIG\.?|TABLE)\s*[A-Z]?\d+'  # Fig. 1, Figure S1, Table A2
+            r'|图\s*\d+|表\s*\d+'                                          # 中文图表
+            r'|(?:Figure|Fig\.?|Table)\s*[IVX]+',                          # 罗马数字 Table IV
+            re.IGNORECASE,
+        )
 
-    candidate_pages = []
-    for page_num in range(len(doc)):
-        if len(candidate_pages) >= MAX_PAGES_TO_SCAN:
-            break
-        try:
-            text = doc[page_num].get_text()
-            if FIGURE_CAPTION_RE.search(text):
-                candidate_pages.append(page_num)
-        except Exception:
-            continue
-
-    # 退而：如果没检测到标题但 PDF 有图片，扫图片最多的页
-    if not candidate_pages:
-        image_counts = []
+        candidate_pages = []
         for page_num in range(len(doc)):
+            if len(candidate_pages) >= MAX_PAGES_TO_SCAN:
+                break
             try:
-                imgs = doc[page_num].get_images(full=True)
-                if imgs:
-                    image_counts.append((page_num, len(imgs)))
+                text = doc[page_num].get_text()
+                if FIGURE_CAPTION_RE.search(text):
+                    candidate_pages.append(page_num)
             except Exception:
                 continue
-        image_counts.sort(key=lambda x: -x[1])
-        candidate_pages = [p for p, _ in image_counts[:MAX_PAGES_TO_SCAN]]
 
-    # 再退：扫第 2-3 页
-    if not candidate_pages:
-        candidate_pages = [p for p in range(1, min(4, len(doc)))]
+        # 退而：如果没检测到标题但 PDF 有图片，扫图片最多的页
+        if not candidate_pages:
+            image_counts = []
+            for page_num in range(len(doc)):
+                try:
+                    imgs = doc[page_num].get_images(full=True)
+                    if imgs:
+                        image_counts.append((page_num, len(imgs)))
+                except Exception:
+                    continue
+            image_counts.sort(key=lambda x: -x[1])
+            candidate_pages = [p for p, _ in image_counts[:MAX_PAGES_TO_SCAN]]
 
-    logger.info(f"  🔍 Gemini 图表检测: {len(candidate_pages)}页有图表标题 → {[p+1 for p in candidate_pages]}")
+        # 再退：扫第 2-3 页
+        if not candidate_pages:
+            candidate_pages = [p for p in range(1, min(4, len(doc)))]
 
-    # 精简 Prompt（减少 token 加快响应）
-    system_prompt = """Extract figures/tables from this academic paper page.
+        logger.info(f"  Gemini 图表检测: {len(candidate_pages)}页有图表标题 → {[p+1 for p in candidate_pages]}")
+
+        # 精简 Prompt（减少 token 加快响应）
+        system_prompt = """Extract figures/tables from this academic paper page.
 TYPE: framework_diagram | statistical_table | descriptive_table | data_chart | other
 CAPTION: [caption]
 CONTENT:
@@ -3548,43 +3556,50 @@ CONTENT:
 [chart: Chinese description]
 If none: reply NONE."""
 
-    pages_processed = 0
-    for page_num in candidate_pages:
-        logger.info(f"  📄 Gemini 第{page_num+1}页...")
-        try:
-            page = doc[page_num]
-            pix = page.get_pixmap(dpi=120)
-            img_data = pix.tobytes("png")
+        pages_processed = 0
+        for page_num in candidate_pages:
+            logger.info(f"  Gemini 第{page_num+1}页...")
+            try:
+                page = doc[page_num]
+                pix = page.get_pixmap(dpi=120)
+                img_data = pix.tobytes("png")
 
-            resp = client.models.generate_content(
-                model="gemini-flash-latest",
-                contents=[{
-                    "parts": [
-                        {"text": system_prompt},
-                        {"inline_data": {"mime_type": "image/png", "data": img_data}},
-                    ]
-                }],
-            )
+                resp = client.models.generate_content(
+                    model="gemini-flash-latest",
+                    contents=[{
+                        "parts": [
+                            {"text": system_prompt},
+                            {"inline_data": {"mime_type": "image/png", "data": img_data}},
+                        ]
+                    }],
+                )
 
-            text = resp.text.strip() if resp.text else ""
-            if not text or "NONE" in text.upper()[:10]:
-                logger.info(f"  📄 第{page_num+1}页: 无图表")
+                text = resp.text.strip() if resp.text else ""
+                if not text or "NONE" in text.upper()[:10]:
+                    logger.info(f"  第{page_num+1}页: 无图表")
+                    continue
+
+                pages_processed += 1
+                _parse_gemini_structured_output(text, page_num + 1, result)
+                logger.info(f"  第{page_num+1}页: ✓ 有图表")
+
+                if page_num != candidate_pages[-1]:
+                    await asyncio.sleep(1)
+
+            except Exception as e:
+                logger.warning(f"Gemini 第{page_num+1}页异常: {e}")
+                if "429" in str(e) or "RESOURCE_EXHAUSTED" in str(e):
+                    await asyncio.sleep(15)
                 continue
 
-            pages_processed += 1
-            _parse_gemini_structured_output(text, page_num + 1, result)
-            logger.info(f"  📄 第{page_num+1}页: ✓ 有图表")
+        logger.info(f"  ✓ Gemini 完成: {pages_processed}页有图表, {sum(len(v) for v in result.values())} 个图表/表格")
+    finally:
+        if doc is not None:
+            try:
+                doc.close()
+            except Exception:
+                pass
 
-            if page_num != candidate_pages[-1]:
-                await asyncio.sleep(1)
-
-        except Exception as e:
-            logger.warning(f"Gemini 第{page_num+1}页异常: {e}")
-            if "429" in str(e) or "RESOURCE_EXHAUSTED" in str(e):
-                await asyncio.sleep(15)
-            continue
-
-    logger.info(f"  ✓ Gemini 完成: {pages_processed}页有图表, {sum(len(v) for v in result.values())} 个图表/表格")
     return result
 
 
@@ -6807,6 +6822,29 @@ async def re_read_from_zotero_flow():
             logger.error(f"  ⊘ DeepSeek AI 阅读失败: {pdf_path.name}")
             failed.append((item["title"], "DeepSeek AI 阅读失败"))
             continue
+
+        # Gemini Vision 图表识别 + DeepSeek 图表分析
+        gemini_key = config.get("gemini_api_key", "")
+        if gemini_key:
+            try:
+                logger.info(f"  Gemini Vision 图表识别...")
+                figure_data = await _recognize_figures_structured(pdf_path, gemini_key)
+                if figure_data:
+                    total_figs = sum(len(v) for v in figure_data.values())
+                    if total_figs > 0:
+                        notes["_figures"] = figure_data
+                        logger.info(f"  ✓ Gemini 识别 {total_figs} 个图表/表格")
+
+                        # 用 DeepSeek 对图表做结合文献的分析
+                        fig_summary = _format_figure_data(figure_data)
+                        analysis = await _analyze_figures_with_deepseek(
+                            text[:3000], fig_summary, notes
+                        )
+                        if analysis:
+                            notes["图表分析"] = analysis
+                            logger.info(f"  ✓ 图表分析完成")
+            except Exception as e:
+                logger.warning(f"  Gemini 图表识别异常: {e}")
 
         # 填充影响因子
         journal_name = notes.get("期刊", "")
