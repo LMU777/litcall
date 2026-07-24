@@ -108,19 +108,6 @@ python run_agent_worker.py --target-papers 5  # 或 CLI
 
 ---
 
-## Design Decisions
-
-| 决策 | 理由 |
-|------|------|
-| **单体 ~8600 行，不拆分** | 所有函数共享全局状态（config, logger, paths）。过早拆分导致循环导入。Web 化迁移时框架自然强制分层 |
-| **n-gram TF-IDF，不用向量库** | 70 篇规模下字符 n-gram 天然跨语言（中英统一），零新依赖。200+ 篇时升级 embedding |
-| **信号文件，不用消息队列** | 单机单用户。文件零依赖、透明、一个 `ls` 就能调试 |
-| **游标在 config.json，不用数据库** | 最简单可用的持久化。原子写入防 corruption |
-
-详见 [ARCHITECTURE.md](ARCHITECTURE.md)
-
----
-
 ## Screenshots
 
 <!-- TODO: 补充截图 -->
