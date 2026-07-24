@@ -21,7 +21,7 @@
  深度阅读 (Phase 2)
    ├─ 扫描 新论文待处理/*.pdf
    ├─ PyMuPDF 提取全文 + 图表
-   ├─ DeepSeek V4 Pro → 13 字段结构化笔记
+   ├─ DeepSeek V4 Pro → 18 字段结构化笔记
    ├─ 自检 (幻觉检测 + 变量交叉校验)
    ├─ Gemini Vision → 图表描述
    ├─ Obsidian 笔记 + 知识图谱链接

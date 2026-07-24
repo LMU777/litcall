@@ -31,7 +31,7 @@ ATHENA 将上述流程自动化，人工只需做一件事：**在 SPIS 上手�
 │   VPN 检测   │   SPIS 文献检索   │   深度阅读 + 入库          │
 │              │                  │                            │
 │  自动检测    │  24 组中英关键词   │  DeepSeek V4 Pro 全文精读  │
-│  湖南大学VPN │  60+ 期刊白名单    │  13 字段结构化笔记         │
+│  湖南大学VPN │  60+ 期刊白名单    │  18 字段结构化笔记         │
 │  5 分钟超时  │  年份过滤 + 去重   │  自检验证 + 图表提取       │
 │              │  关键词游标续传   │  → Obsidian + Zotero       │
 │              │                  │  → 知识图谱双向链接         │
@@ -54,7 +54,7 @@ ATHENA 将上述流程自动化，人工只需做一件事：**在 SPIS 上手�
 - **付费墙应对**：自动识别 OA 文献并下载，付费文献通过 SPIS 文献求助自动提交
 
 ### 📖 Deep Reading
-- **13 字段结构化笔记**：研究背景→研究问题→变量汇总→研究方法→研究结果→讨论与结论→创新点→局限与展望→图表分析
+- **18 字段结构化笔记**：研究背景→研究问题→变量汇总→研究方法→方法论详解→研究结果→讨论与结论→创新点→局限与展望→图表分析
 - **反幻觉 Pipeline**：自检 + 变量交叉校验 + 人工复核队列
 - **图表识别**：Gemini Vision API 提取 PDF 图表并嵌入笔记
 - **关键纪律**：只写原文明确出现的信息，不推断不编造；数字与原文严格一致
@@ -96,7 +96,7 @@ athena/
 │   ├── _index.md            # 文献索引
 │   ├── 2020/ ... 2026/      # 按年份 → 期刊分层
 │   │   └── {journal}/
-│   │       ├── {year}_{title}.md   # 13 字段精读笔记
+│   │       ├── {year}_{title}.md   # 18 字段精读笔记
 │   │       └── attachments/        # PDF 图表
 │   └── concepts/            # 概念节点（知识图谱）
 │
@@ -141,7 +141,7 @@ python run_agent_worker.py --year-start 2025 --year-end 2026 --target-papers 5
 | Journal Coverage | 60+ whitelist + 239 IF database |
 | Keywords | 24 (broad / narrow / Chinese) |
 | Time Saved | 6–8 hrs → ~5 min per week |
-| Note Structure | 13 fields with hallucination checks |
+| Note Structure | 18 fields with hallucination checks |
 | Lines of Code | ~11,000 (Python) |
 
 ## Design Decisions
