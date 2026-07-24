@@ -1,4 +1,4 @@
-# LitCall — Academic Literature Agent for AI × Marketing
+# LitCall — Academic Literature Agent 
 
 > **将每周 15–20 小时的文献检索、笔记整理与知识管理压缩至 2–3 小时。Agent 承担全部查找、筛选、结构化笔记和入库——你只负责结合笔记深度阅读论文本身。**
 
