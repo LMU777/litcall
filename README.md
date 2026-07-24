@@ -1,6 +1,6 @@
 # 🦉 ATHENA — Academic Literature Agent for AI × Marketing
 
-> **面向 AI×Marketing 交叉领域的个人学术文献 Agent。将每周 25–30+ 小时的文献检索、深度精读与知识整理工作压缩至 ~5 分钟人工操作。不是通用 AI 阅读器——而是针对高影响力付费期刊深度阅读需求，从检索、方法论精读、到知识图谱入库的全流程个性化管道。**
+> **面向 AI×Marketing 交叉领域的个人学术文献 Agent。将每周 15–20 小时的文献检索、笔记整理与知识管理压缩至 2–3 小时——Agent 承担全部查找、筛选、结构化笔记和入库工作，你只负责结合笔记深度阅读论文本身。不是通用 AI 阅读器——而是针对高影响力付费期刊深度阅读需求，从检索、方法论精读、到知识图谱入库的全流程个性化管道。**
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.60-FF4B4B?logo=streamlit)](https://streamlit.io)
@@ -46,7 +46,7 @@ ATHENA 是一套**个性化文献 Agent**——不是通用 skill，而是针对
 └──────────────────────────────────────────────────────────────┘
 ```
 
-**人工只需做一件事：在 SPIS 上下载付费 PDF（5 分钟）。其余全自动。**
+**人工只需做两件事：在 SPIS 上下载付费 PDF（~5 分钟）+ 结合结构化笔记深度阅读（2–3 小时）。检索、筛选、做笔记、入库全自动。**
 
 ---
 
