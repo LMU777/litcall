@@ -1,5 +1,19 @@
+# Core
 aiohttp>=3.9.0
 requests>=2.31.0
-openpyxl>=3.1.0
-PyMuPDF>=1.23.0
+
+# Browser Automation
 playwright>=1.40.0
+
+# PDF Processing
+PyMuPDF>=1.23.0
+
+# AI / Vision
+google-genai>=0.3.0
+
+# Data & Excel
+openpyxl>=3.1.0
+numpy>=1.24.0
+
+# Web UI
+streamlit>=1.40.0
