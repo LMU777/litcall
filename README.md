@@ -5,7 +5,6 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.60-FF4B4B?logo=streamlit)](https://streamlit.io)
 [![DeepSeek](https://img.shields.io/badge/LLM-DeepSeek_V4_Pro-4B6BFB)](https://platform.deepseek.com)
-[![Status](https://img.shields.io/badge/Status-Active_2_months-brightgreen)]()
 
 ---
 
@@ -18,7 +17,7 @@
   ├──────────────────┤     ├──────────────────┤     ├──────────────────┤     ├──────────────────┤
   │ • 5分钟超时       │     │ • 24组中英关键词   │     │ • DeepSeek 全文   │     │ • 重建论文索引    │
   │ • 未连自动跳过    │     │ • 60+顶刊白名单    │     │ • 18字段结构化    │     │ • 知识图谱同步    │
-  │                  │     │ • 四层去重         │     │ • 方法论详解       │     │ • 问答系统就绪    │
+  │ • 识别登录页状态  │     │ • 四层去重         │     │ • 方法论详解       │     │ • 问答系统就绪    │
   │                  │     │ • 双语标题清洗     │     │ • 反幻觉自检       │     │                  │
   │                  │     │ • 游标断点续传     │     │ • Gemini 图表     │     │                  │
   └──────────────────┘     └──────────────────┘     └──────────────────┘     └──────────────────┘
@@ -35,9 +34,9 @@
 
 ## Why This Isn't Just Another "AI Paper Summarizer"
 
-ATHENA 不是通用 AI 阅读器。以下每一个设计决策都来自真实使用中踩过的坑——只用通用工具的人不会遇到这些问题：
+以下每个功能都来自真实使用中踩过的坑——只用通用工具的人不会遇到这些问题：
 
-| 如果你只用通用 AI 工具 | ATHENA 的做法 | 为什么这很重要 |
+| 通用 AI 工具 | ATHENA | 为什么重要 |
 |---|---|---|
 | 丢 PDF → 出总结，不知道期刊是不是水刊 | **60+ 顶刊白名单**（UTD24/FT50 全覆盖）+ 239 种期刊 IF 库，检索阶段就过滤 | 你不会浪费时间读一篇 Q4 期刊的论文 |
 | "本文使用回归分析" | **方法论详解**：讲建模逻辑、识别策略、内生性处理、稳健性检验——像教授讲研究方法课 | 读完笔记你就懂了方法，不用回头翻原文 |
@@ -54,17 +53,17 @@ ATHENA 不是通用 AI 阅读器。以下每一个设计决策都来自真实使
 
 ## Technical Highlights
 
-**信号文件 IPC — 跨进程运行控制**
-Streamlit Web 面板通过写 `.pause` / `.terminate` 文件控制 `subprocess.Popen(DETACHED_PROCESS)` 拉起的独立 Worker。检查点设在翻页/关键词/Phase 边界——不会在浏览器操作中途杀进程。零外部依赖，透明可调试。
+**异步并发 + 子进程隔离**
+`asyncio` + `aiohttp` 驱动并发 HTTP（DeepSeek API、Zotero API、Unpaywall 并行调用）。Agent Worker 通过 `subprocess.Popen(DETACHED_PROCESS)` 独立于 Streamlit 进程运行——关闭浏览器不影响执行。进度通过结构化 JSON 日志文件增量写出，Web 面板 3 秒轮询实现实时监控。
 
-**关键词游标状态机**
-`config.json` 中维护 `(category_index, keyword_index)` 游标，原子写入（temp file + rename）防崩溃丢进度。24 个关键词按 宽→窄→中文 三级迭代，全部穷尽后自动切为"仅检索当年新文献"模式。
+**Playwright 持久化上下文**
+`launch_persistent_context` 将 SPIS 登录 Cookie 保存到本地目录，跨会话维持认证状态。VPN 检测复用同一套登录页标记识别逻辑（账号登录/手机号登录/微信扫码/当前IP），四标记中至少两个匹配即判定已登录。
 
-**反幻觉三道防线**
-(1) Prompt 纪律：只写原文明确出现的，temperature=0.1。(2) 二次 API 自检：逐字段核对变量遗漏、数字错误、编造内容。(3) 人工复核队列：自检失败的笔记进入 `review_queue.json`，Web 面板提示用户复核。
+**结构化运行日志**
+`AgentRunLogger` 为每次运行生成独立 JSON 文件（`运行日志/runs/{run_id}.json`），三阶段（检索/阅读/同步）状态实时增量写入。Streamlit 运行历史页直接解析 JSON 渲染——不需要数据库。
 
 **跨语言混合检索**
-Q&A 模块：中文学术术语自动扩展为英文对应词 → Token 匹配 (55% weight，标题×4/关键词×3/正文×1.5) + 字符 3-gram+4-gram TF-IDF 语义重排 (45% weight)。不需要向量数据库——70 篇规模下零新依赖。
+中文学术术语自动扩展为英文对应词（100+ 映射表）→ Token 匹配 (55% weight，标题×4/关键词×3/正文×1.5) + 字符 3-gram+4-gram TF-IDF 语义重排 (45%)。70 篇规模下零新依赖，不需要向量数据库。
 
 ---
 
