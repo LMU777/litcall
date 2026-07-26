@@ -97,11 +97,11 @@ python run_agent_worker.py --target-papers 5  # 或 CLI
 ├── run_agent_worker.py  CLI Worker 入口
 ├── config.example.json  配置模板 · journal_if.json (239种期刊 IF)
 │
-├── agent抓取/           Obsidian Vault — 70 papers, 按 年份/期刊 分层
+├── litcall/           Obsidian Vault — 70 papers, 按 年份/期刊 分层
 │   └── {year}/{journal}/{title}.md  + attachments/ + concepts/
 │
-├── 新论文待处理/         PDF 暂存区 · 运行日志/runs/ (结构化 JSON)
-├── agent文献汇总.xlsx    Excel 全量库 · processed_log.json (已处理日志)
+├── 待处理文献/         PDF 暂存区 · 运行日志/runs/ (结构化 JSON)
+├── litcall文献汇总.xlsx    Excel 全量库 · processed_log.json (已处理日志)
 └── requirements.txt
 ```
 

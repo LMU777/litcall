@@ -8,5 +8,35 @@
     "confidence": "high",
     "issues": "FAIL: 变量汇总字段为空，但原文为定量实证研究综述，应汇总各主题下的关键变量（如推荐数量、购买可能性、信任、满意度等）。",
     "added": "2026-07-24T10:54:10.790518"
+  },
+  {
+    "title": "Artificial intelligence (AI)-augmented knowledge management capability and clinical performance: implications for market",
+    "first_author": "Pradeep Kumar",
+    "year": "2025",
+    "journal": "Journal of Knowledge Management",
+    "doi": "",
+    "confidence": "low",
+    "issues": "WRONG: WRONG: 编造 — 笔记“变量汇总”部分声称“数据整合 CR=0.788, AVE=0.555”、“知识发现 CR=0.820, AVE=0.532”、“医疗程序 CR=0.776, AVE=0.",
+    "added": "2026-07-25T02:56:41.673626"
+  },
+  {
+    "title": "Leveraging Data Analytics for Predictive Consumer Behaviour Modelling",
+    "first_author": "Muhammad Usman Tariq",
+    "year": "2025",
+    "journal": "IGI Global Scientific Publishing",
+    "doi": "",
+    "confidence": "low",
+    "issues": "WRONG: WRONG: 编造 — 笔记称“来自零售、医疗、电商、金融、娱乐、制造业的六个案例”，但所提供的原文片段仅提到“Real-world case studies across various indus",
+    "added": "2026-07-25T13:46:02.940252"
+  },
+  {
+    "title": "Using generative artificial intelligence (GenAI) in marketing: Development and practices",
+    "first_author": "Hau-Ling Chan",
+    "year": "2025",
+    "journal": "Journal of Business Research",
+    "doi": "",
+    "confidence": "low",
+    "issues": "WRONG: WRONG: 编造 — 笔记中“研究结果”部分详述了四大主题及其",
+    "added": "2026-07-25T14:21:54.230747"
   }
 ]

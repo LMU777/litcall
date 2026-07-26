@@ -9,9 +9,8 @@ CLAUDE.md
 # ── 运行日志（含个人信息）──
 运行日志/
 
-# ── 新论文待处理 ──
-新论文待处理/*.pdf
-新论文待处理/pending_manual.json
+# ── 待处理文献（PDF + 生成的 JSON 笔记）──
+待处理文献/
 
 # ── Python ──
 __pycache__/
@@ -20,9 +19,25 @@ __pycache__/
 .venv/
 venv/
 
-# ── Obsidian 工作区 ──
-agent抓取/.obsidian/workspace.json
-agent抓取/.obsidian/backlink.json
+# ── 运行时数据 ──
+processed_log.json
+review_queue.json
+qa_sessions/
+browser_data/
+litcall文献汇总.xlsx
+
+# ── Obsidian 工作区（排除运行时文件，保留源码）──
+litcall/.obsidian/
+# 排除 Obsidian 生成的笔记目录（年份/期刊/概念），保留 Python 包
+litcall/20*/
+litcall/concepts/
+litcall/_index.md
+
+# ── 旧文件残留 ──
+lib/
+*.backup.*
+agent文献汇总.xlsx
+新论文待处理/
 
 # ── 临时文件 ──
 *.tmp

@@ -1,282 +1,513 @@
 [
   {
     "doi": "10.1007/s11301-024-00434-z",
-    "title": "Rethinking cluster under coopetition strategy: an integrative literature review and research agenda"
+    "title": "Rethinking cluster under coopetition strategy: an integrative literature review and research agenda",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378520",
+    "journal": "Management Review Quarterly",
+    "year": "2025",
+    "file": "2025_Rethinking cluster under coopetition strategy_ an integrative literature review and research agenda.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1007/s11301-025-00486-9",
-    "title": "Transforming marketing landscapes: a systematic literature review of generative AI using the TCCM model framework"
+    "title": "Transforming marketing landscapes: a systematic literature review of generative AI using the TCCM model framework",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378542",
+    "journal": "Management Review Quarterly",
+    "year": "2025",
+    "file": "2025_Transforming marketing landscapes_ a systematic literature review of generative AI using the TCCM model framework.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T12:19:18.080101"
   },
   {
     "doi": "10.1007/s11747-024-01044-7",
-    "title": "Generative AI in innovation and marketing processes: A roadmap of research opportunities"
+    "title": "Generative AI in innovation and marketing processes: A roadmap of research opportunities",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378546",
+    "journal": "Journal of the Academy of Marketing Science",
+    "year": "2025",
+    "file": "2025_Generative AI in innovation and marketing processes_ A roadmap of research opportunities.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1007/s11747-024-01064-3",
-    "title": "How generative AI Is shaping the future of marketing"
+    "title": "How generative AI Is shaping the future of marketing",
+    "status": "error",
+    "cleaned_at": "2026-07-26T00:57:54.378550",
+    "journal": "Journal of the Academy of Marketing Science",
+    "year": "2025",
+    "file": "2025_How generative AI Is shaping the future of marketing.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T12:07:19.765028",
+    "error": "四库事务失败: excel"
   },
   {
     "doi": "10.1007/s11747-025-01120-6",
-    "title": "Transformative marketing strategies in the era of new-age technologies: Principles, plan, purpose, and practice"
+    "title": "Transformative marketing strategies in the era of new-age technologies: Principles, plan, purpose, and practice",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378553",
+    "journal": "Journal of the Academy of Marketing Science",
+    "year": "2025",
+    "file": "2025_Transformative marketing strategies in the era of new-age technologies_ Principles_ plan_ purpose_ and practice.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T12:11:34.595427"
   },
   {
     "doi": "10.1007/s11831-025-10355-z",
-    "title": "A Critical Analysis of Generative AI: Challenges, Opportunities, and Future Research Directions"
+    "title": "A Critical Analysis of Generative AI: Challenges, Opportunities, and Future Research Directions",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378556",
+    "journal": "Archives of Computational Methods in Engineering",
+    "year": "2026",
+    "file": "2026_A Critical Analysis of Generative AI_ Challenges_ Opportunities_ and Future Research Directions.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T12:24:12.302003"
   },
   {
     "doi": "10.1016/j.caeo.2026.100378",
-    "title": "Generative Artificial Intelligence integration in higher education: A constructivist learning theory approach"
+    "title": "Generative Artificial Intelligence integration in higher education: A constructivist learning theory approach",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378559",
+    "journal": "Computers and Education Open",
+    "year": "2026",
+    "file": "2026_Generative Artificial Intelligence integration in higher education_ A constructivist learning theory approach.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1016/j.chb.2025.108684",
-    "title": "Using artificial intelligence (AI) to enhance customer experience and to develop strategic marketing: An integrative synthesis"
+    "title": "Using artificial intelligence (AI) to enhance customer experience and to develop strategic marketing: An integrative synthesis",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378563",
+    "journal": "Computers in Human Behavior",
+    "year": "2025",
+    "file": "2025_Using artificial intelligence _AI_ to enhance customer experience and to develop strategic marketing_ An integrative syn.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1016/j.clsr.2025.106141",
-    "title": "Generative AI and the future of marketing: A consumer protection perspective"
+    "title": "Generative AI and the future of marketing: A consumer protection perspective",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378566",
+    "journal": "Computer Law & Security Review: The International Journal of Technology Law and Practice",
+    "year": "2025",
+    "file": "2025_Generative AI and the future of marketing_ A consumer protection perspective.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T12:28:58.973047"
   },
   {
     "doi": "10.1016/j.ijme.2024.101075",
-    "title": "AI applications in business: Trends and insights using bibliometric analysis"
+    "title": "AI applications in business: Trends and insights using bibliometric analysis",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378569",
+    "journal": "The International Journal of Management Education",
+    "year": "2024",
+    "file": "2024_AI applications in business_ Trends and insights using bibliometric analysis.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1016/j.jbusres.2020.09.013",
-    "title": "Artificial intelligence to design collaborative strategy: An application to urban destinations"
+    "title": "Artificial intelligence to design collaborative strategy: An application to urban destinations",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378572",
+    "journal": "Journal of Business Research",
+    "year": "2020",
+    "file": "2020_Artificial intelligence to design collaborative strategy_ An application to urban destinations.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1016/j.jbusres.2021.03.005",
-    "title": "How may I help you? Driving brand engagement through the warmth of an initial chatbot message"
+    "title": "How may I help you? Driving brand engagement through the warmth of an initial chatbot message",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378575",
+    "journal": "Journal of Business Research",
+    "year": "2021",
+    "file": "2021_How may I help you_ Driving brand engagement through the warmth of an initial chatbot message.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1016/j.jbusres.2023.114493",
-    "title": "Human versus virtual influences, a comparative study"
+    "title": "Human versus virtual influences, a comparative study",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378578",
+    "journal": "Journal of Business Research",
+    "year": "2024",
+    "file": "2024_Human versus virtual influences_ a comparative study.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1016/j.jbusres.2024.114984",
-    "title": "The AI-authorship effect: Understanding authenticity, moral disgust, and consumer responses to AI-generated marketing communications"
+    "title": "The AI-authorship effect: Understanding authenticity, moral disgust, and consumer responses to AI-generated marketing communications",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378581",
+    "journal": "Journal of Business Research",
+    "year": "2025",
+    "file": "2025_The AI-authorship effect_ Understanding authenticity_ moral disgust_ and consumer responses to AI-generated marketing co.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1016/j.jbusres.2026.116346",
-    "title": "A taxonomy of machine learning, AI, and generative AI in marketing: Recent applications and future directions"
+    "title": "A taxonomy of machine learning, AI, and generative AI in marketing: Recent applications and future directions",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378584",
+    "journal": "Journal of Business Research",
+    "year": "2026",
+    "file": "2026_A taxonomy of machine learning_ AI_ and generative AI in marketing_ Recent applications and future directions.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T12:36:53.178161"
   },
   {
     "doi": "10.1016/j.techfore.2021.121227",
-    "title": "How can SMEs successfully navigate VUCA environment: The role of agility in the digital transformation era"
+    "title": "How can SMEs successfully navigate VUCA environment: The role of agility in the digital transformation era",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378587",
+    "journal": "Technological Forecasting & Social Change",
+    "year": "2022",
+    "file": "2022_How can SMEs successfully navigate VUCA environment_ The role of agility in the digital transformation era.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1038/s41562-023-01734-2",
-    "title": "Psychological factors underlying attitudes toward AI tools"
+    "title": "Psychological factors underlying attitudes toward AI tools",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378590",
+    "journal": "Nature Human Behaviour",
+    "year": "2023",
+    "file": "2023_Psychological factors underlying attitudes toward AI tools.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T12:29:22.111084",
+    "error": "四库事务失败: excel"
   },
   {
     "doi": "10.1080/00207543.2026.2680586",
-    "title": "Potentials of generative AI in logistics and supply chain management: a guiding review on applications and future research directions"
+    "title": "Potentials of generative AI in logistics and supply chain management: a guiding review on applications and future research directions",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378593",
+    "journal": "International Journal of Production Research",
+    "year": "2026",
+    "file": "2026_Potentials of generative AI in logistics and supply chain management_ a guiding review on applications and future resear.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1080/00913367.2026.2686658",
-    "title": "Generative Artificial Intelligence in Marketing Communication: A Stakeholder Effects Model"
+    "title": "Generative Artificial Intelligence in Marketing Communication: A Stakeholder Effects Model",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378596",
+    "journal": "Journal of Advertising",
+    "year": "2026",
+    "file": "2026_Generative Artificial Intelligence in Marketing Communication_ A Stakeholder Effects Model.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1080/02650487.2025.2547545",
-    "title": "Consumer empowerment through generative artificial intelligence: enhancing brand narrative with collaboration, creation, and communication"
+    "title": "Consumer empowerment through generative artificial intelligence: enhancing brand narrative with collaboration, creation, and communication",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378599",
+    "journal": "International Journal of Advertising",
+    "year": "2025",
+    "file": "2025_Consumer empowerment through generative artificial intelligence_ enhancing brand narrative with collaboration_ creation_.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1080/13527266.2026.2704128",
-    "title": "Artificial and misfit: The sincerity challenge of AI influencers in social advocacy"
+    "title": "Artificial and misfit: The sincerity challenge of AI influencers in social advocacy",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378602",
+    "journal": "Journal of Marketing Communications",
+    "year": "2026",
+    "file": "2026_Artificial and misfit_ The sincerity challenge of AI influencers in social advocacy.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1093/jcr/ucaf013",
-    "title": "The GenAI Future of Consumer Research"
+    "title": "The GenAI Future of Consumer Research",
+    "status": "error",
+    "cleaned_at": "2026-07-26T00:57:54.378605",
+    "journal": "Journal of Consumer Research",
+    "year": "2025",
+    "file": "2025_The GenAI Future of Consumer Research.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T12:08:42.883709",
+    "error": "四库事务失败: excel"
   },
   {
-    "doi": "10.1108/APJML-04-2024-0485",
-    "title": "Unveiling the marketer’s lens: exploring experiences and perspectives on AI integration in marketing strategies"
+    "doi": "10.1108/apjml-04-2024-0485",
+    "title": "Unveiling the marketer’s lens: exploring experiences and perspectives on AI integration in marketing strategies",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378608",
+    "journal": "Asia Pacific Journal of Marketing and Logistics",
+    "year": "2025",
+    "file": "2025_Unveiling the marketer_s lens_ exploring experiences and perspectives on AI integration in marketing strategies.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T12:48:14.499939"
   },
   {
-    "doi": "10.1108/IJQSS-08-2025-0220",
-    "title": "Artificial intelligence (AI) powered marketing strategy: a systematic literature review and future research direction"
+    "doi": "10.1108/ijqss-08-2025-0220",
+    "title": "Artificial intelligence (AI) powered marketing strategy: a systematic literature review and future research direction",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378611",
+    "journal": "International Journal of Quality and Service Sciences",
+    "year": "2026",
+    "file": "2026_Artificial intelligence _AI_ powered marketing strategy_ a systematic literature review and future research direction.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
-    "doi": "10.1108/JRIM-01-2023-0030",
-    "title": "Artificial intelligence in interactive marketing: a conceptual framework and research agenda"
+    "doi": "10.1108/jrim-01-2023-0030",
+    "title": "Artificial intelligence in interactive marketing: a conceptual framework and research agenda",
+    "status": "error",
+    "cleaned_at": "2026-07-26T00:57:54.378614",
+    "journal": "Journal of Research in Interactive Marketing",
+    "year": "2024",
+    "file": "2024_Artificial intelligence in interactive marketing_ a conceptual framework and research agenda.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T12:21:17.530004",
+    "error": "四库事务失败: excel"
   },
   {
-    "doi": "10.1109/TEM.2021.3083536",
-    "title": "Advancing Consumer Behavior: The Role of Artificial Intelligence Technologies and Knowledge Sharing"
+    "doi": "10.1109/tem.2021.3083536",
+    "title": "Advancing Consumer Behavior: The Role of Artificial Intelligence Technologies and Knowledge Sharing",
+    "status": "error",
+    "cleaned_at": "2026-07-26T00:57:54.378617",
+    "journal": "IEEE Transactions on Engineering Management",
+    "year": "2021",
+    "file": "2021_Advancing Consumer Behavior_ The Role of Artificial Intelligence Technologies and Knowledge Sharing.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T12:34:13.489495",
+    "error": "'list' object has no attribute 'split'"
   },
   {
     "doi": "10.1126/science.aec8352",
-    "title": "Sycophantic AI decreases prosocial intentions and promotes dependence"
+    "title": "Sycophantic AI decreases prosocial intentions and promotes dependence",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378620",
+    "journal": "Science",
+    "year": "2026",
+    "file": "2026_Sycophantic AI decreases prosocial intentions and promotes dependence.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1177/00222429241276529",
-    "title": "AI–Human Hybrids for Marketing Research: Leveraging Large Language Models (LLMs) as Collaborators"
+    "title": "AI–Human Hybrids for Marketing Research: Leveraging Large Language Models (LLMs) as Collaborators",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378623",
+    "journal": "Journal of Marketing",
+    "year": "2025",
+    "file": "2025_AI_Human Hybrids for Marketing Research_ Leveraging Large Language Models _LLMs_ as Collaborators.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1177/00222429251314491",
-    "title": "Lower Artificial Intelligence Literacy Predicts Greater AI Receptivity"
+    "title": "Lower Artificial Intelligence Literacy Predicts Greater AI Receptivity",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378626",
+    "journal": "Journal of Marketing",
+    "year": "2025",
+    "file": "2025_Lower Artificial Intelligence Literacy Predicts Greater AI Receptivity.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1177/00222429251344139",
-    "title": "Automated Versus Human Agents: A Meta-Analysis of Customer Responses to Robots, Chatbots, and Algorithms and Their Contingencies"
+    "title": "Automated Versus Human Agents: A Meta-Analysis of Customer Responses to Robots, Chatbots, and Algorithms and Their Contingencies",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378629",
+    "journal": "Journal of Marketing",
+    "year": "2026",
+    "file": "2026_Automated Versus Human Agents_ A Meta-Analysis of Customer Responses to Robots_ Chatbots_ and Algorithms and Their Conti.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1177/00222437251347268",
-    "title": "AI for Customer Journeys: A Transformer Approach"
+    "title": "AI for Customer Journeys: A Transformer Approach",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378632",
+    "journal": "Journal of Marketing Research",
+    "year": "2026",
+    "file": "2026_AI for Customer Journeys_ A Transformer Approach.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1177/00222437251399115",
-    "title": "When ‘Year’ Feels Near: How Year versus Length Framing Alters Time Perception and Consumer Decisions"
+    "title": "When ‘Year’ Feels Near: How Year versus Length Framing Alters Time Perception and Consumer Decisions",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378635",
+    "journal": "Journal of Marketing Research",
+    "year": "2025",
+    "file": "2025_When _Year_ Feels Near_ How Year versus Length Framing Alters Time Perception and Consumer Decisions.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1177/02734753241303742",
-    "title": "Can AI Level the Playing Field? How AI-Assisted Assessment Impacts Gender Bias in Student Evaluations of Marketing Instructors"
+    "title": "Can AI Level the Playing Field? How AI-Assisted Assessment Impacts Gender Bias in Student Evaluations of Marketing Instructors",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378637",
+    "journal": "Journal of Marketing Education",
+    "year": "2025",
+    "file": "2025_Can AI Level the Playing Field_ How AI-Assisted Assessment Impacts Gender Bias in Student Evaluations of Marketing Instr.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1177/02734753261454375",
-    "title": "Assessing the Irreducibly Human in Marketing Education: A Voice, Judgement and Taste Framework for the Generative AI Era"
-  },
-  {
-    "doi": "10.1177/07439156241297973",
-    "title": "Experiential Narratives in Marketing: A Comparison of Generative AI and Human Content"
+    "title": "Assessing the Irreducibly Human in Marketing Education: A Voice, Judgement and Taste Framework for the Generative AI Era",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378640",
+    "journal": "Journal of Marketing Education",
+    "year": "2026",
+    "file": "2026_Assessing the Irreducibly Human in Marketing Education_ A Voice_ Judgement and Taste Framework for the Generative AI Era.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.1192/bjp.2026.10557",
-    "title": "Algorithmic dopamine economies: emerging psychiatric challenges in an artificial-intelligence-mediated attention ecology"
+    "title": "Algorithmic dopamine economies: emerging psychiatric challenges in an artificial-intelligence-mediated attention ecology",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378643",
+    "journal": "The British Journal of Psychiatry",
+    "year": "2026",
+    "file": "2026_Algorithmic dopamine economies_ emerging psychiatric challenges in an artificial-intelligence-mediated attention ecology.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T03:26:20.872313"
   },
   {
     "doi": "10.1287/mksc.2025.0262",
-    "title": "Database Report: Twin-2K-500: A Data Set for Building Digital Twins of over 2,000 People Based on Their Answers to over 500 Questions"
+    "title": "Database Report: Twin-2K-500: A Data Set for Building Digital Twins of over 2,000 People Based on Their Answers to over 500 Questions",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378646",
+    "journal": "Marketing Science",
+    "year": "2025",
+    "file": "2025_Database Report_ Twin-2K-500_ A Data Set for Building Digital Twins of over 2_000 People Based on Their Answers to over .md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
-    "doi": "10.1287/mnsc.2022.03849,",
-    "title": "Human-Centered Artificial Intelligence: A Field Experiment"
+    "doi": "10.1287/mnsc.2022.03849",
+    "title": "Human-Centered Artificial Intelligence: A Field Experiment",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378649",
+    "journal": "Management Science",
+    "year": "2026",
+    "file": "2026_Human-Centered Artificial Intelligence_ A Field Experiment.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.13778/j.cnki.11-3705/c.2025.11.003",
-    "title": "Research on the Impact of Artificial Intelligence Application on the Sustainable Development of Manufacturing Enterprises"
+    "title": "Research on the Impact of Artificial Intelligence Application on the Sustainable Development of Manufacturing Enterprises",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378653",
+    "journal": "调研世界",
+    "year": "2025",
+    "file": "2025_Research on the Impact of Artificial Intelligence Application on the Sustainable Development of Manufacturing Enterprise.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.19744/j.cnki.11-1235/f.2026.0023",
-    "title": "Customer Value Co-creation Behavior in Full Scene Smart Service: Dimension Exploration, Scale Development, and Influence Examination"
+    "title": "Customer Value Co-creation Behavior in Full Scene Smart Service: Dimension Exploration, Scale Development, and Influence Examination",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378656",
+    "journal": "管理世界",
+    "year": "2026",
+    "file": "2026_Customer Value Co-creation Behavior in Full Scene Smart Service_ Dimension Exploration_ Scale Development_ and Influence.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
     "doi": "10.35912/ijfam.v7i2.2593",
-    "title": "Digital marketing evolution: Understanding the role of AI and Big Data in shaping marketing strategies"
-  },
-  {
-    "doi": "10.4018/979-8-3693-9461-8.ch006",
-    "title": "Understanding Artificial Intelligence and Its Major Role in Branding"
+    "title": "Digital marketing evolution: Understanding the role of AI and Big Data in shaping marketing strategies",
+    "status": "storing",
+    "cleaned_at": "2026-07-26T00:57:54.378659",
+    "journal": "International Journal of Financial, Accounting, and Management (IJFAM)",
+    "year": "2025",
+    "file": "2025_Digital marketing evolution_ Understanding the role of AI and Big Data in shaping marketing strategies.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T12:51:38.826743"
   },
   {
     "doi": "10.1108/MD-03-2024-0574",
-    "title": "A consumer acceptance model in the artificial intelligence era"
+    "title": "A consumer acceptance model in the artificial intelligence era",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378712",
+    "journal": "Management Decision",
+    "year": "2025",
+    "file": "2025_A consumer acceptance model in the artificial intelligence era.md",
+    "created_at": "2026-07-25T12:00:00",
+    "updated_at": "2026-07-26T02:59:43.498341"
   },
   {
-    "doi": "10.1016/j.tourman.2025.105182",
-    "title": "AI-infused video marketing: Exploring the influence of AI-generated tourism videos on tourist decision-making"
-  },
-  {
-    "doi": "10.3389/frai.2024.1515716",
-    "title": "An analysis of artificial intelligence automation in digital music streaming platforms for improving consumer subscription responses: a review"
-  },
-  {
-    "doi": "10.1108/JKM-01-2024-0111",
-    "title": "Artificial intelligence (AI)-augmented knowledge management capability and clinical performance: implications for marketing strategies in health-care sector"
-  },
-  {
-    "doi": "10.36024/1248-045-001-013",
-    "title": "Artificial Intelligence in Decision-making: Literature Review"
-  },
-  {
-    "doi": "10.1111/ijcs.70054",
-    "title": "Artificial Intelligence Social Responsibility in the Consumer Market: Dimension Exploration and Scale Development"
-  },
-  {
-    "doi": "10.4018/979-8-3693-9944-6.ch006",
-    "title": "Brand Loyalty through AI and Personalisation AI-Generated Content for Financial Marketing"
-  },
-  {
-    "doi": "10.1111/ijcs.70095",
-    "title": "Brand Social Sustainability and Consumer Behavior: A Systematic Literature Review and Future Research Agenda"
-  },
-  {
-    "doi": "10.1111/basr.70052WILEYlogoSocietylogo",
-    "title": "Building Trust Through Empathetic AI: A Mixed-Methods Study on Anthropomorphic Artificial Intelligence Driving Sustainable Consumer Behavior in Tourism"
-  },
-  {
-    "doi": "10.1016/j.clrc.2025.100269",
-    "title": "Exploring AI-enabled green marketing and green intention: An integrated PLS-SEM and NCA approach"
-  },
-  {
-    "doi": "10.1080/10528008.2025.2478869",
-    "title": "EXPLORING PERCEPTIONS OF AI IN THE MARKETING CLASSROOM: A STIMULI-ORGANISM-RESPONSE FRAMEWORK"
-  },
-  {
-    "doi": "10.1016/j.jretconser.2025.104234",
-    "title": "From familiarity to acceptance: The impact of Generative Artificial Intelligence on consumer adoption of retail chatbots"
-  },
-  {
-    "doi": "10.1016/j.jjimei.2024.100317",
-    "title": "Harnessing the potential of generative AI in digital marketing using the Behavioral Reasoning Theory approach"
-  },
-  {
-    "doi": "10.1109/TEM.2024.3525412,",
-    "title": "Implementing Artificial Intelligence Consumer Experience Tools in Supply Chains"
-  },
-  {
-    "doi": "10.4018/979-8-3693-3799-8.ch011",
-    "title": "Leveraging Data Analytics for Predictive Consumer Behaviour Modelling"
-  },
-  {
-    "doi": "10.1080/15332861.2026.2678335",
-    "title": "Mapping the Footprint of Artificial Intelligence (AI) in Marketing: A Bibliometric Review and Content Analysis of Scientific Literature"
-  },
-  {
-    "doi": "10.1016/j.engappai.2025.113712",
-    "title": "Revolutionizing artificial intelligence enabled predictive analytics with smart consumer electronics for real-time healthcare monitoring"
-  },
-  {
-    "doi": "10.4018/979-8-3373-2747-1.ch005",
-    "title": "Role of AI in Consumer Decision-Making Processes"
-  },
-  {
-    "doi": "10.1007/s10551-024-05894-7",
-    "title": "Security and Privacy Protection in Developing Ethical AI: A Mixed-Methods Study from a Marketing Employee Perspective"
-  },
-  {
-    "doi": "10.1057/s41270-024-00355-6",
-    "title": "The interplay of artificial intelligence, machine learning, and data analytics in digital marketing and promotions: a review and research agenda"
-  },
-  {
-    "doi": "10.1007/978-3-031-78026-4_2",
-    "title": "The Role of Artificial Intelligence in the Modern Approach to Neuromarketing"
-  },
-  {
-    "doi": "10.1108/YC-08-2024-2207",
-    "title": "They misused me! Digital literacy’s dual role in AI marketing manipulation and unethical young consumer behavior"
-  },
-  {
-    "doi": "10.1002/cb.70126",
-    "title": "Travel Recommendations of Tomorrow: Generative Artificial Intelligence and Travel Planning"
+    "doi": "10.4018/979-8-3693-9461-8.ch006",
+    "title": "Understanding Artificial Intelligence and Its Major Role in Branding",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378715",
+    "journal": "IGI Global Scientific Publishing",
+    "year": "2025",
+    "updated_at": "2026-07-26T12:39:56.290162",
+    "created_at": "2026-07-25T12:00:00",
+    "file": "2025_Understanding Artificial Intelligence and Its Major Role in Branding.md",
+    "error": "四库事务失败: excel"
   },
   {
     "doi": "10.1016/j.jbusres.2025.115276",
-    "title": "Using generative artificial intelligence (GenAI) in marketing: Development and practices"
+    "title": "Using generative artificial intelligence (GenAI) in marketing: Development and practices",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378718",
+    "journal": "Journal of Business Research",
+    "year": "2025",
+    "updated_at": "2026-07-26T02:59:43.498341",
+    "created_at": "2026-07-25T12:00:00",
+    "file": "2025_Using generative artificial intelligence _GenAI_ in marketing_ Development and practices.md"
   },
   {
     "doi": "10.1021/acsfoodscitech.5c01273",
-    "title": "Visual and Textural Cues Dominate Flavor in Consumer Choice of Roasted Almonds: An Explainable Artificial Intelligence Decoding"
-  },
-  {
-    "doi": "10.1007/s10551-025-06155-x",
-    "title": "When Consumer Autonomy is Compromised: Adopting a Dual-Type View to Understand AI-Driven Marketing and Its Impact on Young Consumers’ Ethical Behavior"
+    "title": "Visual and Textural Cues Dominate Flavor in Consumer Choice of Roasted Almonds: An Explainable Artificial Intelligence Decoding",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378722",
+    "journal": "ACS Food Science & Technology",
+    "year": "2026",
+    "updated_at": "2026-07-26T02:59:43.498341",
+    "created_at": "2026-07-25T12:00:00",
+    "file": "2026_Visual and Textural Cues Dominate Flavor in Consumer Choice of Roasted Almonds_ An Explainable Artificial Intelligence D.md"
   },
   {
     "doi": "10.1080/10447318.2025.2520997",
-    "title": "Who Should Lead and What to Say? Exploring AI-Dominant vs. Human-Dominant Content Creation for Informational and Emotional Marketing"
+    "title": "Who Should Lead and What to Say? Exploring AI-Dominant vs. Human-Dominant Content Creation for Informational and Emotional Marketing",
+    "status": "done",
+    "cleaned_at": "2026-07-26T00:57:54.378724",
+    "journal": "International Journal of Human–Computer Interaction",
+    "year": "2025",
+    "updated_at": "2026-07-26T02:59:43.498341",
+    "created_at": "2026-07-25T12:00:00",
+    "file": "2025_Who Should Lead and What to Say_ Exploring AI-Dominant vs_ Human-Dominant Content Creation for Informational and Emotion.md"
   },
   {
-    "doi": "10.1109/TEM.2025.3648018",
-    "title": "Artificial Intelligence and Consumer Information Search: A Review, Synthesis, and Propositions"
+    "doi": "10.1007/s10551-025-06155-x",
+    "title": "When Consumer Autonomy Is Compromised: Adopting a Dual-Type View to Understand AI-Driven Marketing and Its Impact on Young Consumers Ethical Behavior",
+    "year": "2025",
+    "journal": "Journal of Business Ethics",
+    "file": "When Consumer Autonomy is Compromised Adopting a Dual-Type View to Understand AI-Driven Marketing and Its Impact on Young Consumers Ethical Behavior.pdf",
+    "status": "done",
+    "updated_at": "2026-07-26T02:59:43.498341",
+    "created_at": "2026-07-26T02:06:07"
   }
 ]
